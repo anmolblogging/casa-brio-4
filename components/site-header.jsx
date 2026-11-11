@@ -43,7 +43,7 @@ function U() {
   );
 }
 export const SiteHeader = function ({ hideOnInitial: t } = {}) {
-  let s = usePathname(),
+  let s = (usePathname() || "/").replace(/(.)\/+$/, "$1"),
     [r, d] = useState(!1),
     [c, p] = useState(!1);
   return (
