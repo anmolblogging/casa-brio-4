@@ -82,8 +82,8 @@ function HomeAbout() {
                 </div>
                 <div className="absolute bottom-0 -left-6 sm:-left-10 w-[45%] aspect-[4/3] overflow-hidden rounded-sm border-2 border-[#d4af37]/40 bg-[#121015] shadow-[0_25px_60px_rgba(0,0,0,0.9)] hidden sm:block">
                   <img
-                    src="/images/home/exterior-mountains.jpg"
-                    alt="Casa Brio villa and the Sahyadri hills"
+                    src="/images/home/gallery/terrace/terrace-01.jpg"
+                    alt="Friends on the Casa Brio terrace at sunset"
                     className="h-full w-full object-cover object-center transition-transform duration-700 hover:scale-105"
                   />
                 </div>

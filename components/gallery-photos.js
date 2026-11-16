@@ -1,1027 +1,776 @@
-// Photos from the Casa Brio shoots, added to the gallery on top of the hand-written list.
+// Generated from the Casa Brio Google Drive photo folders (drive-assets/web).
+// One tab per top-level Drive folder. width/height keep the masonry layout exact.
+export const galleryCategories = ["Swimming Pool", "Party Room", "Cricket Turf", "Bedrooms", "Bathrooms", "Living Room", "Cabana", "Terrace", "Kids Play Area", "Exterior", "Trek", "More Moments"];
+
 export const galleryPhotos = [
   {
-    "id": "bath-001",
-    "src": "/images/gallery/bath-001.jpg",
-    "title": "Bathroom",
-    "category": "Bedrooms & Living",
-    "aspect": "portrait",
-    "caption": "One of the attached bathrooms."
+    "src": "/images/home/gallery/swimming-pool/swimming-pool-01.jpg",
+    "category": "Swimming Pool",
+    "width": 1400,
+    "height": 938,
+    "lifestyle": true
   },
   {
-    "id": "bath-002",
-    "src": "/images/gallery/bath-002.jpg",
-    "title": "Bathroom",
-    "category": "Bedrooms & Living",
-    "aspect": "portrait",
-    "caption": "One of the attached bathrooms."
+    "src": "/images/home/gallery/swimming-pool/swimming-pool-02.jpg",
+    "category": "Swimming Pool",
+    "width": 1400,
+    "height": 938,
+    "lifestyle": true
   },
   {
-    "id": "bath-003",
-    "src": "/images/gallery/bath-003.jpg",
-    "title": "Bathroom",
-    "category": "Bedrooms & Living",
-    "aspect": "portrait",
-    "caption": "One of the attached bathrooms."
+    "src": "/images/home/gallery/swimming-pool/swimming-pool-03.jpg",
+    "category": "Swimming Pool",
+    "width": 1400,
+    "height": 938,
+    "lifestyle": true
   },
   {
-    "id": "bath-004",
-    "src": "/images/gallery/bath-004.jpg",
-    "title": "Bathroom",
-    "category": "Bedrooms & Living",
-    "aspect": "portrait",
-    "caption": "One of the attached bathrooms."
+    "src": "/images/home/gallery/swimming-pool/swimming-pool-04.jpg",
+    "category": "Swimming Pool",
+    "width": 1400,
+    "height": 938,
+    "lifestyle": true
   },
   {
-    "id": "bath-005",
-    "src": "/images/gallery/bath-005.jpg",
-    "title": "Bathroom",
-    "category": "Bedrooms & Living",
-    "aspect": "portrait",
-    "caption": "One of the attached bathrooms."
+    "src": "/images/home/gallery/swimming-pool/swimming-pool-05.jpg",
+    "category": "Swimming Pool",
+    "width": 1127,
+    "height": 1400,
+    "lifestyle": true
   },
   {
-    "id": "bath-006",
-    "src": "/images/gallery/bath-006.jpg",
-    "title": "Bathroom",
-    "category": "Bedrooms & Living",
-    "aspect": "portrait",
-    "caption": "One of the attached bathrooms."
+    "src": "/images/home/gallery/swimming-pool/swimming-pool-06.jpg",
+    "category": "Swimming Pool",
+    "width": 1127,
+    "height": 1400,
+    "lifestyle": true
   },
   {
-    "id": "bath-007",
-    "src": "/images/gallery/bath-007.jpg",
-    "title": "Bathroom",
-    "category": "Bedrooms & Living",
-    "aspect": "portrait",
-    "caption": "One of the attached bathrooms."
+    "src": "/images/home/gallery/swimming-pool/swimming-pool-07.jpg",
+    "category": "Swimming Pool",
+    "width": 1127,
+    "height": 1400,
+    "lifestyle": true
   },
   {
-    "id": "bath-008",
-    "src": "/images/gallery/bath-008.jpg",
-    "title": "Bathroom",
-    "category": "Bedrooms & Living",
-    "aspect": "portrait",
-    "caption": "One of the attached bathrooms."
+    "src": "/images/home/gallery/swimming-pool/swimming-pool-08.jpg",
+    "category": "Swimming Pool",
+    "width": 1127,
+    "height": 1400,
+    "lifestyle": true
   },
   {
-    "id": "bath-009",
-    "src": "/images/gallery/bath-009.jpg",
-    "title": "Bathroom",
-    "category": "Bedrooms & Living",
-    "aspect": "portrait",
-    "caption": "One of the attached bathrooms."
+    "src": "/images/home/gallery/swimming-pool/swimming-pool-09.jpg",
+    "category": "Swimming Pool",
+    "width": 1400,
+    "height": 938,
+    "lifestyle": false
   },
   {
-    "id": "bed-001",
-    "src": "/images/gallery/bed-001.jpg",
-    "title": "Bedroom",
-    "category": "Bedrooms & Living",
-    "aspect": "landscape",
-    "caption": "One of the bedrooms at the villa."
+    "src": "/images/home/gallery/party-room/party-room-01.jpg",
+    "category": "Party Room",
+    "width": 935,
+    "height": 1400,
+    "lifestyle": true
   },
   {
-    "id": "bed-002",
-    "src": "/images/gallery/bed-002.jpg",
-    "title": "Bedroom",
-    "category": "Bedrooms & Living",
-    "aspect": "landscape",
-    "caption": "One of the bedrooms at the villa."
+    "src": "/images/home/gallery/party-room/party-room-02.jpg",
+    "category": "Party Room",
+    "width": 935,
+    "height": 1400,
+    "lifestyle": true
   },
   {
-    "id": "bed-003",
-    "src": "/images/gallery/bed-003.jpg",
-    "title": "Bedroom",
-    "category": "Bedrooms & Living",
-    "aspect": "portrait",
-    "caption": "One of the bedrooms at the villa."
+    "src": "/images/home/gallery/party-room/party-room-03.jpg",
+    "category": "Party Room",
+    "width": 935,
+    "height": 1400,
+    "lifestyle": true
   },
   {
-    "id": "bed-004",
-    "src": "/images/gallery/bed-004.jpg",
-    "title": "Bedroom",
-    "category": "Bedrooms & Living",
-    "aspect": "landscape",
-    "caption": "One of the bedrooms at the villa."
+    "src": "/images/home/gallery/party-room/party-room-04.jpg",
+    "category": "Party Room",
+    "width": 935,
+    "height": 1400,
+    "lifestyle": true
   },
   {
-    "id": "bed-005",
-    "src": "/images/gallery/bed-005.jpg",
-    "title": "Bedroom",
-    "category": "Bedrooms & Living",
-    "aspect": "landscape",
-    "caption": "One of the bedrooms at the villa."
+    "src": "/images/home/gallery/party-room/party-room-05.jpg",
+    "category": "Party Room",
+    "width": 935,
+    "height": 1400,
+    "lifestyle": true
   },
   {
-    "id": "bed-006",
-    "src": "/images/gallery/bed-006.jpg",
-    "title": "Bedroom",
-    "category": "Bedrooms & Living",
-    "aspect": "portrait",
-    "caption": "One of the bedrooms at the villa."
+    "src": "/images/home/gallery/party-room/party-room-06.jpg",
+    "category": "Party Room",
+    "width": 935,
+    "height": 1400,
+    "lifestyle": true
   },
   {
-    "id": "bed-007",
-    "src": "/images/gallery/bed-007.jpg",
-    "title": "Bedroom",
-    "category": "Bedrooms & Living",
-    "aspect": "landscape",
-    "caption": "One of the bedrooms at the villa."
+    "src": "/images/home/gallery/party-room/party-room-07.jpg",
+    "category": "Party Room",
+    "width": 935,
+    "height": 1400,
+    "lifestyle": true
   },
   {
-    "id": "bed-008",
-    "src": "/images/gallery/bed-008.jpg",
-    "title": "Bedroom",
-    "category": "Bedrooms & Living",
-    "aspect": "landscape",
-    "caption": "One of the bedrooms at the villa."
+    "src": "/images/home/gallery/party-room/party-room-08.jpg",
+    "category": "Party Room",
+    "width": 935,
+    "height": 1400,
+    "lifestyle": true
   },
   {
-    "id": "bed-009",
-    "src": "/images/gallery/bed-009.jpg",
-    "title": "Bedroom",
-    "category": "Bedrooms & Living",
-    "aspect": "portrait",
-    "caption": "One of the bedrooms at the villa."
+    "src": "/images/home/gallery/party-room/party-room-09.jpg",
+    "category": "Party Room",
+    "width": 787,
+    "height": 1400,
+    "lifestyle": true
   },
   {
-    "id": "bed-010",
-    "src": "/images/gallery/bed-010.jpg",
-    "title": "Bedroom",
-    "category": "Bedrooms & Living",
-    "aspect": "landscape",
-    "caption": "One of the bedrooms at the villa."
+    "src": "/images/home/gallery/party-room/party-room-10.jpg",
+    "category": "Party Room",
+    "width": 1400,
+    "height": 935,
+    "lifestyle": false
   },
   {
-    "id": "bed-011",
-    "src": "/images/gallery/bed-011.jpg",
-    "title": "Bedroom",
-    "category": "Bedrooms & Living",
-    "aspect": "landscape",
-    "caption": "One of the bedrooms at the villa."
+    "src": "/images/home/gallery/party-room/party-room-11.jpg",
+    "category": "Party Room",
+    "width": 1400,
+    "height": 935,
+    "lifestyle": false
   },
   {
-    "id": "bed-012",
-    "src": "/images/gallery/bed-012.jpg",
-    "title": "Bedroom",
-    "category": "Bedrooms & Living",
-    "aspect": "portrait",
-    "caption": "One of the bedrooms at the villa."
+    "src": "/images/home/gallery/party-room/party-room-12.jpg",
+    "category": "Party Room",
+    "width": 1400,
+    "height": 935,
+    "lifestyle": false
   },
   {
-    "id": "bed-013",
-    "src": "/images/gallery/bed-013.jpg",
-    "title": "Bedroom",
-    "category": "Bedrooms & Living",
-    "aspect": "portrait",
-    "caption": "One of the bedrooms at the villa."
+    "src": "/images/home/gallery/party-room/party-room-13.jpg",
+    "category": "Party Room",
+    "width": 1400,
+    "height": 935,
+    "lifestyle": false
   },
   {
-    "id": "bed-014",
-    "src": "/images/gallery/bed-014.jpg",
-    "title": "Bedroom",
-    "category": "Bedrooms & Living",
-    "aspect": "portrait",
-    "caption": "One of the bedrooms at the villa."
+    "src": "/images/home/gallery/party-room/party-room-14.jpg",
+    "category": "Party Room",
+    "width": 935,
+    "height": 1400,
+    "lifestyle": false
   },
   {
-    "id": "bed-041",
-    "src": "/images/gallery/bed-041.jpg",
-    "title": "Bedroom",
-    "category": "Bedrooms & Living",
-    "aspect": "portrait",
-    "caption": "One of the bedrooms at the villa."
+    "src": "/images/home/gallery/party-room/party-room-15.jpg",
+    "category": "Party Room",
+    "width": 935,
+    "height": 1400,
+    "lifestyle": false
   },
   {
-    "id": "bed-045",
-    "src": "/images/gallery/bed-045.jpg",
-    "title": "Bedroom",
-    "category": "Bedrooms & Living",
-    "aspect": "portrait",
-    "caption": "One of the bedrooms at the villa."
-  },
-  {
-    "id": "bed-046",
-    "src": "/images/gallery/bed-046.jpg",
-    "title": "Bedroom",
-    "category": "Bedrooms & Living",
-    "aspect": "portrait",
-    "caption": "One of the bedrooms at the villa."
-  },
-  {
-    "id": "bed-047",
-    "src": "/images/gallery/bed-047.jpg",
-    "title": "Bedroom",
-    "category": "Bedrooms & Living",
-    "aspect": "portrait",
-    "caption": "One of the bedrooms at the villa."
-  },
-  {
-    "id": "bed-054",
-    "src": "/images/gallery/bed-054.jpg",
-    "title": "Bedroom",
-    "category": "Bedrooms & Living",
-    "aspect": "portrait",
-    "caption": "One of the bedrooms at the villa."
-  },
-  {
-    "id": "bed-055",
-    "src": "/images/gallery/bed-055.jpg",
-    "title": "Bedroom",
-    "category": "Bedrooms & Living",
-    "aspect": "portrait",
-    "caption": "One of the bedrooms at the villa."
-  },
-  {
-    "id": "bed-057",
-    "src": "/images/gallery/bed-057.jpg",
-    "title": "Bedroom",
-    "category": "Bedrooms & Living",
-    "aspect": "portrait",
-    "caption": "One of the bedrooms at the villa."
-  },
-  {
-    "id": "bed-058",
-    "src": "/images/gallery/bed-058.jpg",
-    "title": "Bedroom",
-    "category": "Bedrooms & Living",
-    "aspect": "portrait",
-    "caption": "One of the bedrooms at the villa."
-  },
-  {
-    "id": "bed-059",
-    "src": "/images/gallery/bed-059.jpg",
-    "title": "Bedroom",
-    "category": "Bedrooms & Living",
-    "aspect": "portrait",
-    "caption": "One of the bedrooms at the villa."
-  },
-  {
-    "id": "bed-060",
-    "src": "/images/gallery/bed-060.jpg",
-    "title": "Bedroom",
-    "category": "Bedrooms & Living",
-    "aspect": "portrait",
-    "caption": "One of the bedrooms at the villa."
-  },
-  {
-    "id": "bed-062",
-    "src": "/images/gallery/bed-062.jpg",
-    "title": "Bedroom",
-    "category": "Bedrooms & Living",
-    "aspect": "portrait",
-    "caption": "One of the bedrooms at the villa."
-  },
-  {
-    "id": "cabana-001",
-    "src": "/images/gallery/cabana-001.jpg",
-    "title": "Cabana",
-    "category": "Pool & Deck",
-    "aspect": "portrait",
-    "caption": "The cabana seating by the pool."
-  },
-  {
-    "id": "cabana-002",
-    "src": "/images/gallery/cabana-002.jpg",
-    "title": "Cabana",
-    "category": "Pool & Deck",
-    "aspect": "portrait",
-    "caption": "The cabana seating by the pool."
-  },
-  {
-    "id": "cabana-003",
-    "src": "/images/gallery/cabana-003.jpg",
-    "title": "Cabana",
-    "category": "Pool & Deck",
-    "aspect": "portrait",
-    "caption": "The cabana seating by the pool."
-  },
-  {
-    "id": "cabana-004",
-    "src": "/images/gallery/cabana-004.jpg",
-    "title": "Cabana",
-    "category": "Pool & Deck",
-    "aspect": "portrait",
-    "caption": "The cabana seating by the pool."
-  },
-  {
-    "id": "cabana-005",
-    "src": "/images/gallery/cabana-005.jpg",
-    "title": "Cabana",
-    "category": "Pool & Deck",
-    "aspect": "portrait",
-    "caption": "The cabana seating by the pool."
-  },
-  {
-    "id": "cabana-006",
-    "src": "/images/gallery/cabana-006.jpg",
-    "title": "Cabana",
-    "category": "Pool & Deck",
-    "aspect": "portrait",
-    "caption": "The cabana seating by the pool."
-  },
-  {
-    "id": "cabana-013",
-    "src": "/images/gallery/cabana-013.jpg",
-    "title": "Cabana",
-    "category": "Pool & Deck",
-    "aspect": "portrait",
-    "caption": "The cabana seating by the pool."
-  },
-  {
-    "id": "cabana-014",
-    "src": "/images/gallery/cabana-014.jpg",
-    "title": "Cabana",
-    "category": "Pool & Deck",
-    "aspect": "portrait",
-    "caption": "The cabana seating by the pool."
-  },
-  {
-    "id": "ext-001",
-    "src": "/images/gallery/ext-001.jpg",
-    "title": "The Villa",
-    "category": "Exterior & Views",
-    "aspect": "landscape",
-    "caption": "The villa from the outside."
-  },
-  {
-    "id": "ext-002",
-    "src": "/images/gallery/ext-002.jpg",
-    "title": "The Villa",
-    "category": "Exterior & Views",
-    "aspect": "landscape",
-    "caption": "The villa from the outside."
-  },
-  {
-    "id": "ext-003",
-    "src": "/images/gallery/ext-003.jpg",
-    "title": "The Villa",
-    "category": "Exterior & Views",
-    "aspect": "landscape",
-    "caption": "The villa from the outside."
-  },
-  {
-    "id": "ext-004",
-    "src": "/images/gallery/ext-004.jpg",
-    "title": "The Villa",
-    "category": "Exterior & Views",
-    "aspect": "portrait",
-    "caption": "The villa from the outside."
-  },
-  {
-    "id": "ext-005",
-    "src": "/images/gallery/ext-005.jpg",
-    "title": "The Villa",
-    "category": "Exterior & Views",
-    "aspect": "portrait",
-    "caption": "The villa from the outside."
-  },
-  {
-    "id": "ext-006",
-    "src": "/images/gallery/ext-006.jpg",
-    "title": "The Villa",
-    "category": "Exterior & Views",
-    "aspect": "portrait",
-    "caption": "The villa from the outside."
-  },
-  {
-    "id": "ext-007",
-    "src": "/images/gallery/ext-007.jpg",
-    "title": "The Villa",
-    "category": "Exterior & Views",
-    "aspect": "portrait",
-    "caption": "The villa from the outside."
-  },
-  {
-    "id": "ext-009",
-    "src": "/images/gallery/ext-009.jpg",
-    "title": "The Villa",
-    "category": "Exterior & Views",
-    "aspect": "portrait",
-    "caption": "The villa from the outside."
-  },
-  {
-    "id": "ext-010",
-    "src": "/images/gallery/ext-010.jpg",
-    "title": "The Villa",
-    "category": "Exterior & Views",
-    "aspect": "portrait",
-    "caption": "The villa from the outside."
-  },
-  {
-    "id": "ext-012",
-    "src": "/images/gallery/ext-012.jpg",
-    "title": "The Villa",
-    "category": "Exterior & Views",
-    "aspect": "portrait",
-    "caption": "The villa from the outside."
-  },
-  {
-    "id": "ext-013",
-    "src": "/images/gallery/ext-013.jpg",
-    "title": "The Villa",
-    "category": "Exterior & Views",
-    "aspect": "portrait",
-    "caption": "The villa from the outside."
-  },
-  {
-    "id": "ext-014",
-    "src": "/images/gallery/ext-014.jpg",
-    "title": "The Villa",
-    "category": "Exterior & Views",
-    "aspect": "portrait",
-    "caption": "The villa from the outside."
-  },
-  {
-    "id": "ext-015",
-    "src": "/images/gallery/ext-015.jpg",
-    "title": "The Villa",
-    "category": "Exterior & Views",
-    "aspect": "portrait",
-    "caption": "The villa from the outside."
-  },
-  {
-    "id": "ext-016",
-    "src": "/images/gallery/ext-016.jpg",
-    "title": "The Villa",
-    "category": "Exterior & Views",
-    "aspect": "portrait",
-    "caption": "The villa from the outside."
-  },
-  {
-    "id": "ext-017",
-    "src": "/images/gallery/ext-017.jpg",
-    "title": "The Villa",
-    "category": "Exterior & Views",
-    "aspect": "portrait",
-    "caption": "The villa from the outside."
-  },
-  {
-    "id": "ext-019",
-    "src": "/images/gallery/ext-019.jpg",
-    "title": "The Villa",
-    "category": "Exterior & Views",
-    "aspect": "landscape",
-    "caption": "The villa from the outside."
-  },
-  {
-    "id": "guest-007",
-    "src": "/images/gallery/guest-007.jpg",
-    "title": "Garden",
-    "category": "Exterior & Views",
-    "aspect": "portrait",
-    "caption": "Banana plants in the garden at the villa."
-  },
-  {
-    "id": "kids-001",
-    "src": "/images/gallery/kids-001.jpg",
-    "title": "Kids Play Area",
-    "category": "Kids Play Area",
-    "aspect": "landscape",
-    "caption": "The play area for children."
-  },
-  {
-    "id": "kids-002",
-    "src": "/images/gallery/kids-002.jpg",
-    "title": "Kids Play Area",
-    "category": "Kids Play Area",
-    "aspect": "portrait",
-    "caption": "The play area for children."
-  },
-  {
-    "id": "kids-004",
-    "src": "/images/gallery/kids-004.jpg",
-    "title": "Kids Play Area",
-    "category": "Kids Play Area",
-    "aspect": "portrait",
-    "caption": "The play area for children."
-  },
-  {
-    "id": "kids-005",
-    "src": "/images/gallery/kids-005.jpg",
-    "title": "Kids Play Area",
-    "category": "Kids Play Area",
-    "aspect": "portrait",
-    "caption": "The play area for children."
-  },
-  {
-    "id": "kids-007",
-    "src": "/images/gallery/kids-007.jpg",
-    "title": "Kids Play Area",
-    "category": "Kids Play Area",
-    "aspect": "portrait",
-    "caption": "The play area for children."
-  },
-  {
-    "id": "kids-008",
-    "src": "/images/gallery/kids-008.jpg",
-    "title": "Kids Play Area",
-    "category": "Kids Play Area",
-    "aspect": "portrait",
-    "caption": "The play area for children."
-  },
-  {
-    "id": "kids-009",
-    "src": "/images/gallery/kids-009.jpg",
-    "title": "Kids Play Area",
-    "category": "Kids Play Area",
-    "aspect": "portrait",
-    "caption": "The play area for children."
-  },
-  {
-    "id": "kids-010",
-    "src": "/images/gallery/kids-010.jpg",
-    "title": "Kids Play Area",
-    "category": "Kids Play Area",
-    "aspect": "portrait",
-    "caption": "The play area for children."
-  },
-  {
-    "id": "kids-011",
-    "src": "/images/gallery/kids-011.jpg",
-    "title": "Kids Play Area",
-    "category": "Kids Play Area",
-    "aspect": "portrait",
-    "caption": "The play area for children."
-  },
-  {
-    "id": "living-001",
-    "src": "/images/gallery/living-001.jpg",
-    "title": "Living Room",
-    "category": "Bedrooms & Living",
-    "aspect": "landscape",
-    "caption": "The living room at the villa."
-  },
-  {
-    "id": "living-002",
-    "src": "/images/gallery/living-002.jpg",
-    "title": "Living Room",
-    "category": "Bedrooms & Living",
-    "aspect": "landscape",
-    "caption": "The living room at the villa."
-  },
-  {
-    "id": "living-003",
-    "src": "/images/gallery/living-003.jpg",
-    "title": "Living Room",
-    "category": "Bedrooms & Living",
-    "aspect": "portrait",
-    "caption": "The living room at the villa."
-  },
-  {
-    "id": "living-005",
-    "src": "/images/gallery/living-005.jpg",
-    "title": "Living Room",
-    "category": "Bedrooms & Living",
-    "aspect": "portrait",
-    "caption": "The living room at the villa."
-  },
-  {
-    "id": "living-006",
-    "src": "/images/gallery/living-006.jpg",
-    "title": "Living Room",
-    "category": "Bedrooms & Living",
-    "aspect": "portrait",
-    "caption": "The living room at the villa."
-  },
-  {
-    "id": "living-007",
-    "src": "/images/gallery/living-007.jpg",
-    "title": "Living Room",
-    "category": "Bedrooms & Living",
-    "aspect": "portrait",
-    "caption": "The living room at the villa."
-  },
-  {
-    "id": "living-008",
-    "src": "/images/gallery/living-008.jpg",
-    "title": "Living Room",
-    "category": "Bedrooms & Living",
-    "aspect": "portrait",
-    "caption": "The living room at the villa."
-  },
-  {
-    "id": "living-010",
-    "src": "/images/gallery/living-010.jpg",
-    "title": "Living Room",
-    "category": "Bedrooms & Living",
-    "aspect": "portrait",
-    "caption": "The living room at the villa."
-  },
-  {
-    "id": "living-011",
-    "src": "/images/gallery/living-011.jpg",
-    "title": "Living Room",
-    "category": "Bedrooms & Living",
-    "aspect": "portrait",
-    "caption": "The living room at the villa."
-  },
-  {
-    "id": "living-012",
-    "src": "/images/gallery/living-012.jpg",
-    "title": "Living Room",
-    "category": "Bedrooms & Living",
-    "aspect": "portrait",
-    "caption": "The living room at the villa."
-  },
-  {
-    "id": "party-001",
-    "src": "/images/gallery/party-001.jpg",
-    "title": "Party Room",
-    "category": "Party Room & Bar",
-    "aspect": "landscape",
-    "caption": "The party room, with the snooker table and bar."
-  },
-  {
-    "id": "party-002",
-    "src": "/images/gallery/party-002.jpg",
-    "title": "Party Room",
-    "category": "Party Room & Bar",
-    "aspect": "portrait",
-    "caption": "The party room, with the snooker table and bar."
-  },
-  {
-    "id": "party-003",
-    "src": "/images/gallery/party-003.jpg",
-    "title": "Party Room",
-    "category": "Party Room & Bar",
-    "aspect": "portrait",
-    "caption": "The party room, with the snooker table and bar."
-  },
-  {
-    "id": "party-004",
-    "src": "/images/gallery/party-004.jpg",
-    "title": "Party Room",
-    "category": "Party Room & Bar",
-    "aspect": "portrait",
-    "caption": "The party room, with the snooker table and bar."
-  },
-  {
-    "id": "party-005",
-    "src": "/images/gallery/party-005.jpg",
-    "title": "Party Room",
-    "category": "Party Room & Bar",
-    "aspect": "portrait",
-    "caption": "The party room, with the snooker table and bar."
-  },
-  {
-    "id": "party-006",
-    "src": "/images/gallery/party-006.jpg",
-    "title": "Party Room",
-    "category": "Party Room & Bar",
-    "aspect": "portrait",
-    "caption": "The party room, with the snooker table and bar."
-  },
-  {
-    "id": "party-007",
-    "src": "/images/gallery/party-007.jpg",
-    "title": "Party Room",
-    "category": "Party Room & Bar",
-    "aspect": "portrait",
-    "caption": "The party room, with the snooker table and bar."
-  },
-  {
-    "id": "party-008",
-    "src": "/images/gallery/party-008.jpg",
-    "title": "Party Room",
-    "category": "Party Room & Bar",
-    "aspect": "portrait",
-    "caption": "The party room, with the snooker table and bar."
-  },
-  {
-    "id": "party-009",
-    "src": "/images/gallery/party-009.jpg",
-    "title": "Party Room",
-    "category": "Party Room & Bar",
-    "aspect": "portrait",
-    "caption": "The party room, with the snooker table and bar."
-  },
-  {
-    "id": "party-010",
-    "src": "/images/gallery/party-010.jpg",
-    "title": "Party Room",
-    "category": "Party Room & Bar",
-    "aspect": "portrait",
-    "caption": "The party room, with the snooker table and bar."
-  },
-  {
-    "id": "party-043",
-    "src": "/images/gallery/party-043.jpg",
-    "title": "Party Room",
-    "category": "Party Room & Bar",
-    "aspect": "portrait",
-    "caption": "The party room, with the snooker table and bar."
-  },
-  {
-    "id": "party-044",
-    "src": "/images/gallery/party-044.jpg",
-    "title": "Party Room",
-    "category": "Party Room & Bar",
-    "aspect": "portrait",
-    "caption": "The party room, with the snooker table and bar."
-  },
-  {
-    "id": "party-045",
-    "src": "/images/gallery/party-045.jpg",
-    "title": "Party Room",
-    "category": "Party Room & Bar",
-    "aspect": "portrait",
-    "caption": "The party room, with the snooker table and bar."
-  },
-  {
-    "id": "party-046",
-    "src": "/images/gallery/party-046.jpg",
-    "title": "Party Room",
-    "category": "Party Room & Bar",
-    "aspect": "portrait",
-    "caption": "The party room, with the snooker table and bar."
-  },
-  {
-    "id": "party-047",
-    "src": "/images/gallery/party-047.jpg",
-    "title": "Party Room",
-    "category": "Party Room & Bar",
-    "aspect": "portrait",
-    "caption": "The party room, with the snooker table and bar."
-  },
-  {
-    "id": "party-048",
-    "src": "/images/gallery/party-048.jpg",
-    "title": "Party Room",
-    "category": "Party Room & Bar",
-    "aspect": "portrait",
-    "caption": "The party room, with the snooker table and bar."
-  },
-  {
-    "id": "party-049",
-    "src": "/images/gallery/party-049.jpg",
-    "title": "Party Room",
-    "category": "Party Room & Bar",
-    "aspect": "portrait",
-    "caption": "The party room, with the snooker table and bar."
-  },
-  {
-    "id": "party-050",
-    "src": "/images/gallery/party-050.jpg",
-    "title": "Party Room",
-    "category": "Party Room & Bar",
-    "aspect": "portrait",
-    "caption": "The party room, with the snooker table and bar."
-  },
-  {
-    "id": "party-051",
-    "src": "/images/gallery/party-051.jpg",
-    "title": "Party Room",
-    "category": "Party Room & Bar",
-    "aspect": "portrait",
-    "caption": "The party room, with the snooker table and bar."
-  },
-  {
-    "id": "party-052",
-    "src": "/images/gallery/party-052.jpg",
-    "title": "Party Room",
-    "category": "Party Room & Bar",
-    "aspect": "portrait",
-    "caption": "The party room, with the snooker table and bar."
-  },
-  {
-    "id": "party-053",
-    "src": "/images/gallery/party-053.jpg",
-    "title": "Party Room",
-    "category": "Party Room & Bar",
-    "aspect": "portrait",
-    "caption": "The party room, with the snooker table and bar."
-  },
-  {
-    "id": "party-054",
-    "src": "/images/gallery/party-054.jpg",
-    "title": "Party Room",
-    "category": "Party Room & Bar",
-    "aspect": "portrait",
-    "caption": "The party room, with the snooker table and bar."
-  },
-  {
-    "id": "party-055",
-    "src": "/images/gallery/party-055.jpg",
-    "title": "Party Room",
-    "category": "Party Room & Bar",
-    "aspect": "portrait",
-    "caption": "The party room, with the snooker table and bar."
-  },
-  {
-    "id": "party-057",
-    "src": "/images/gallery/party-057.jpg",
-    "title": "Party Room",
-    "category": "Party Room & Bar",
-    "aspect": "portrait",
-    "caption": "The party room, with the snooker table and bar."
-  },
-  {
-    "id": "party-059",
-    "src": "/images/gallery/party-059.jpg",
-    "title": "Party Room",
-    "category": "Party Room & Bar",
-    "aspect": "portrait",
-    "caption": "The party room, with the snooker table and bar."
-  },
-  {
-    "id": "party-060",
-    "src": "/images/gallery/party-060.jpg",
-    "title": "Party Room",
-    "category": "Party Room & Bar",
-    "aspect": "portrait",
-    "caption": "The party room, with the snooker table and bar."
-  },
-  {
-    "id": "party-061",
-    "src": "/images/gallery/party-061.jpg",
-    "title": "Party Room",
-    "category": "Party Room & Bar",
-    "aspect": "portrait",
-    "caption": "The party room, with the snooker table and bar."
-  },
-  {
-    "id": "party-062",
-    "src": "/images/gallery/party-062.jpg",
-    "title": "Party Room",
-    "category": "Party Room & Bar",
-    "aspect": "portrait",
-    "caption": "The party room, with the snooker table and bar."
-  },
-  {
-    "id": "party-067",
-    "src": "/images/gallery/party-067.jpg",
-    "title": "Party Room",
-    "category": "Party Room & Bar",
-    "aspect": "portrait",
-    "caption": "The party room, with the snooker table and bar."
-  },
-  {
-    "id": "party-108",
-    "src": "/images/gallery/party-108.jpg",
-    "title": "Party Room",
-    "category": "Party Room & Bar",
-    "aspect": "portrait",
-    "caption": "The party room, with the snooker table and bar."
-  },
-  {
-    "id": "pool-001",
-    "src": "/images/gallery/pool-001.jpg",
-    "title": "Swimming Pool",
-    "category": "Pool & Deck",
-    "aspect": "landscape",
-    "caption": "The private swimming pool."
-  },
-  {
-    "id": "pool-002",
-    "src": "/images/gallery/pool-002.jpg",
-    "title": "Swimming Pool",
-    "category": "Pool & Deck",
-    "aspect": "portrait",
-    "caption": "The private swimming pool."
-  },
-  {
-    "id": "pool-003",
-    "src": "/images/gallery/pool-003.jpg",
-    "title": "Swimming Pool",
-    "category": "Pool & Deck",
-    "aspect": "portrait",
-    "caption": "The private swimming pool."
-  },
-  {
-    "id": "pool-004",
-    "src": "/images/gallery/pool-004.jpg",
-    "title": "Swimming Pool",
-    "category": "Pool & Deck",
-    "aspect": "portrait",
-    "caption": "The private swimming pool."
-  },
-  {
-    "id": "pool-006",
-    "src": "/images/gallery/pool-006.jpg",
-    "title": "Swimming Pool",
-    "category": "Pool & Deck",
-    "aspect": "portrait",
-    "caption": "The private swimming pool."
-  },
-  {
-    "id": "pool-008",
-    "src": "/images/gallery/pool-008.jpg",
-    "title": "Swimming Pool",
-    "category": "Pool & Deck",
-    "aspect": "portrait",
-    "caption": "The private swimming pool."
-  },
-  {
-    "id": "pool-009",
-    "src": "/images/gallery/pool-009.jpg",
-    "title": "Swimming Pool",
-    "category": "Pool & Deck",
-    "aspect": "portrait",
-    "caption": "The private swimming pool."
-  },
-  {
-    "id": "pool-010",
-    "src": "/images/gallery/pool-010.jpg",
-    "title": "Swimming Pool",
-    "category": "Pool & Deck",
-    "aspect": "portrait",
-    "caption": "The private swimming pool."
-  },
-  {
-    "id": "turf-001",
-    "src": "/images/gallery/turf-001.jpg",
-    "title": "Cricket Turf",
+    "src": "/images/home/gallery/cricket-turf/cricket-turf-01.jpg",
     "category": "Cricket Turf",
-    "aspect": "portrait",
-    "caption": "Playing on the private turf."
+    "width": 935,
+    "height": 1400,
+    "lifestyle": true
   },
   {
-    "id": "turf-002",
-    "src": "/images/gallery/turf-002.jpg",
-    "title": "Cricket Turf",
+    "src": "/images/home/gallery/cricket-turf/cricket-turf-02.jpg",
     "category": "Cricket Turf",
-    "aspect": "landscape",
-    "caption": "Playing on the private turf."
+    "width": 935,
+    "height": 1400,
+    "lifestyle": true
   },
   {
-    "id": "turf-075",
-    "src": "/images/gallery/turf-075.jpg",
-    "title": "Cricket Turf",
+    "src": "/images/home/gallery/cricket-turf/cricket-turf-03.jpg",
     "category": "Cricket Turf",
-    "aspect": "portrait",
-    "caption": "Playing on the private turf."
+    "width": 935,
+    "height": 1400,
+    "lifestyle": true
   },
   {
-    "id": "turf-076",
-    "src": "/images/gallery/turf-076.jpg",
-    "title": "Cricket Turf",
+    "src": "/images/home/gallery/cricket-turf/cricket-turf-04.jpg",
     "category": "Cricket Turf",
-    "aspect": "portrait",
-    "caption": "Playing on the private turf."
+    "width": 935,
+    "height": 1400,
+    "lifestyle": true
   },
   {
-    "id": "turf-077",
-    "src": "/images/gallery/turf-077.jpg",
-    "title": "Cricket Turf",
+    "src": "/images/home/gallery/cricket-turf/cricket-turf-05.jpg",
     "category": "Cricket Turf",
-    "aspect": "portrait",
-    "caption": "Playing on the private turf."
+    "width": 935,
+    "height": 1400,
+    "lifestyle": true
   },
   {
-    "id": "turf-078",
-    "src": "/images/gallery/turf-078.jpg",
-    "title": "Cricket Turf",
+    "src": "/images/home/gallery/cricket-turf/cricket-turf-06.jpg",
     "category": "Cricket Turf",
-    "aspect": "portrait",
-    "caption": "Playing on the private turf."
+    "width": 935,
+    "height": 1400,
+    "lifestyle": true
   },
   {
-    "id": "turf-079",
-    "src": "/images/gallery/turf-079.jpg",
-    "title": "Cricket Turf",
+    "src": "/images/home/gallery/cricket-turf/cricket-turf-07.jpg",
     "category": "Cricket Turf",
-    "aspect": "portrait",
-    "caption": "Playing on the private turf."
+    "width": 935,
+    "height": 1400,
+    "lifestyle": true
   },
   {
-    "id": "view-001",
-    "src": "/images/gallery/view-001.jpg",
-    "title": "Terrace & Hill Views",
-    "category": "Exterior & Views",
-    "aspect": "portrait",
-    "caption": "Looking out over the hills from the villa."
+    "src": "/images/home/gallery/cricket-turf/cricket-turf-08.jpg",
+    "category": "Cricket Turf",
+    "width": 935,
+    "height": 1400,
+    "lifestyle": true
   },
   {
-    "id": "view-002",
-    "src": "/images/gallery/view-002.jpg",
-    "title": "Terrace & Hill Views",
-    "category": "Exterior & Views",
-    "aspect": "landscape",
-    "caption": "Looking out over the hills from the villa."
+    "src": "/images/home/gallery/cricket-turf/cricket-turf-09.jpg",
+    "category": "Cricket Turf",
+    "width": 787,
+    "height": 1400,
+    "lifestyle": true
   },
   {
-    "id": "view-003",
-    "src": "/images/gallery/view-003.jpg",
-    "title": "Terrace & Hill Views",
-    "category": "Exterior & Views",
-    "aspect": "portrait",
-    "caption": "Looking out over the hills from the villa."
+    "src": "/images/home/gallery/cricket-turf/cricket-turf-10.jpg",
+    "category": "Cricket Turf",
+    "width": 1127,
+    "height": 1400,
+    "lifestyle": true
   },
   {
-    "id": "view-004",
-    "src": "/images/gallery/view-004.jpg",
-    "title": "Terrace & Hill Views",
-    "category": "Exterior & Views",
-    "aspect": "portrait",
-    "caption": "Looking out over the hills from the villa."
+    "src": "/images/home/gallery/cricket-turf/cricket-turf-11.jpg",
+    "category": "Cricket Turf",
+    "width": 787,
+    "height": 1400,
+    "lifestyle": true
   },
   {
-    "id": "view-059",
-    "src": "/images/gallery/view-059.jpg",
-    "title": "Terrace & Hill Views",
-    "category": "Exterior & Views",
-    "aspect": "portrait",
-    "caption": "Looking out over the hills from the villa."
+    "src": "/images/home/gallery/cricket-turf/cricket-turf-12.jpg",
+    "category": "Cricket Turf",
+    "width": 1127,
+    "height": 1400,
+    "lifestyle": true
+  },
+  {
+    "src": "/images/home/gallery/cricket-turf/cricket-turf-13.jpg",
+    "category": "Cricket Turf",
+    "width": 1127,
+    "height": 1400,
+    "lifestyle": true
+  },
+  {
+    "src": "/images/home/gallery/cricket-turf/cricket-turf-14.jpg",
+    "category": "Cricket Turf",
+    "width": 1127,
+    "height": 1400,
+    "lifestyle": true
+  },
+  {
+    "src": "/images/home/gallery/cricket-turf/cricket-turf-15.jpg",
+    "category": "Cricket Turf",
+    "width": 1400,
+    "height": 938,
+    "lifestyle": false
+  },
+  {
+    "src": "/images/home/gallery/cricket-turf/cricket-turf-16.jpg",
+    "category": "Cricket Turf",
+    "width": 1400,
+    "height": 938,
+    "lifestyle": false
+  },
+  {
+    "src": "/images/home/gallery/cricket-turf/cricket-turf-17.jpg",
+    "category": "Cricket Turf",
+    "width": 1400,
+    "height": 938,
+    "lifestyle": false
+  },
+  {
+    "src": "/images/home/gallery/cricket-turf/cricket-turf-18.jpg",
+    "category": "Cricket Turf",
+    "width": 1400,
+    "height": 933,
+    "lifestyle": false
+  },
+  {
+    "src": "/images/home/gallery/bedrooms/bedrooms-01.jpg",
+    "category": "Bedrooms",
+    "width": 1400,
+    "height": 935,
+    "lifestyle": true
+  },
+  {
+    "src": "/images/home/gallery/bedrooms/bedrooms-02.jpg",
+    "category": "Bedrooms",
+    "width": 935,
+    "height": 1400,
+    "lifestyle": true
+  },
+  {
+    "src": "/images/home/gallery/bedrooms/bedrooms-03.jpg",
+    "category": "Bedrooms",
+    "width": 935,
+    "height": 1400,
+    "lifestyle": true
+  },
+  {
+    "src": "/images/home/gallery/bedrooms/bedrooms-04.jpg",
+    "category": "Bedrooms",
+    "width": 935,
+    "height": 1400,
+    "lifestyle": true
+  },
+  {
+    "src": "/images/home/gallery/bedrooms/bedrooms-05.jpg",
+    "category": "Bedrooms",
+    "width": 935,
+    "height": 1400,
+    "lifestyle": true
+  },
+  {
+    "src": "/images/home/gallery/bedrooms/bedrooms-06.jpg",
+    "category": "Bedrooms",
+    "width": 935,
+    "height": 1400,
+    "lifestyle": true
+  },
+  {
+    "src": "/images/home/gallery/bedrooms/bedrooms-07.jpg",
+    "category": "Bedrooms",
+    "width": 1127,
+    "height": 1400,
+    "lifestyle": true
+  },
+  {
+    "src": "/images/home/gallery/bedrooms/bedrooms-08.jpg",
+    "category": "Bedrooms",
+    "width": 1127,
+    "height": 1400,
+    "lifestyle": true
+  },
+  {
+    "src": "/images/home/gallery/bedrooms/bedrooms-09.jpg",
+    "category": "Bedrooms",
+    "width": 787,
+    "height": 1400,
+    "lifestyle": true
+  },
+  {
+    "src": "/images/home/gallery/bedrooms/bedrooms-10.jpg",
+    "category": "Bedrooms",
+    "width": 1127,
+    "height": 1400,
+    "lifestyle": true
+  },
+  {
+    "src": "/images/home/gallery/bedrooms/bedrooms-11.jpg",
+    "category": "Bedrooms",
+    "width": 1400,
+    "height": 935,
+    "lifestyle": false
+  },
+  {
+    "src": "/images/home/gallery/bedrooms/bedrooms-12.jpg",
+    "category": "Bedrooms",
+    "width": 1400,
+    "height": 938,
+    "lifestyle": false
+  },
+  {
+    "src": "/images/home/gallery/bedrooms/bedrooms-13.jpg",
+    "category": "Bedrooms",
+    "width": 1400,
+    "height": 935,
+    "lifestyle": false
+  },
+  {
+    "src": "/images/home/gallery/bedrooms/bedrooms-14.jpg",
+    "category": "Bedrooms",
+    "width": 1400,
+    "height": 938,
+    "lifestyle": false
+  },
+  {
+    "src": "/images/home/gallery/bedrooms/bedrooms-15.jpg",
+    "category": "Bedrooms",
+    "width": 1400,
+    "height": 938,
+    "lifestyle": false
+  },
+  {
+    "src": "/images/home/gallery/bedrooms/bedrooms-16.jpg",
+    "category": "Bedrooms",
+    "width": 1400,
+    "height": 933,
+    "lifestyle": false
+  },
+  {
+    "src": "/images/home/gallery/bedrooms/bedrooms-17.jpg",
+    "category": "Bedrooms",
+    "width": 1400,
+    "height": 935,
+    "lifestyle": false
+  },
+  {
+    "src": "/images/home/gallery/bedrooms/bedrooms-18.jpg",
+    "category": "Bedrooms",
+    "width": 1400,
+    "height": 935,
+    "lifestyle": false
+  },
+  {
+    "src": "/images/home/gallery/bedrooms/bedrooms-19.jpg",
+    "category": "Bedrooms",
+    "width": 1400,
+    "height": 935,
+    "lifestyle": false
+  },
+  {
+    "src": "/images/home/gallery/bedrooms/bedrooms-20.jpg",
+    "category": "Bedrooms",
+    "width": 1400,
+    "height": 938,
+    "lifestyle": false
+  },
+  {
+    "src": "/images/home/gallery/bedrooms/bedrooms-21.jpg",
+    "category": "Bedrooms",
+    "width": 1400,
+    "height": 933,
+    "lifestyle": false
+  },
+  {
+    "src": "/images/home/gallery/bedrooms/bedrooms-22.jpg",
+    "category": "Bedrooms",
+    "width": 936,
+    "height": 1400,
+    "lifestyle": false
+  },
+  {
+    "src": "/images/home/gallery/bedrooms/bedrooms-23.jpg",
+    "category": "Bedrooms",
+    "width": 935,
+    "height": 1400,
+    "lifestyle": false
+  },
+  {
+    "src": "/images/home/gallery/bedrooms/bedrooms-24.jpg",
+    "category": "Bedrooms",
+    "width": 935,
+    "height": 1400,
+    "lifestyle": false
+  },
+  {
+    "src": "/images/home/gallery/bathrooms/bathrooms-01.jpg",
+    "category": "Bathrooms",
+    "width": 1400,
+    "height": 935,
+    "lifestyle": false
+  },
+  {
+    "src": "/images/home/gallery/bathrooms/bathrooms-02.jpg",
+    "category": "Bathrooms",
+    "width": 935,
+    "height": 1400,
+    "lifestyle": false
+  },
+  {
+    "src": "/images/home/gallery/bathrooms/bathrooms-03.jpg",
+    "category": "Bathrooms",
+    "width": 935,
+    "height": 1400,
+    "lifestyle": false
+  },
+  {
+    "src": "/images/home/gallery/bathrooms/bathrooms-04.jpg",
+    "category": "Bathrooms",
+    "width": 935,
+    "height": 1400,
+    "lifestyle": false
+  },
+  {
+    "src": "/images/home/gallery/bathrooms/bathrooms-05.jpg",
+    "category": "Bathrooms",
+    "width": 935,
+    "height": 1400,
+    "lifestyle": false
+  },
+  {
+    "src": "/images/home/gallery/bathrooms/bathrooms-06.jpg",
+    "category": "Bathrooms",
+    "width": 935,
+    "height": 1400,
+    "lifestyle": false
+  },
+  {
+    "src": "/images/home/gallery/bathrooms/bathrooms-07.jpg",
+    "category": "Bathrooms",
+    "width": 935,
+    "height": 1400,
+    "lifestyle": false
+  },
+  {
+    "src": "/images/home/gallery/bathrooms/bathrooms-08.jpg",
+    "category": "Bathrooms",
+    "width": 935,
+    "height": 1400,
+    "lifestyle": false
+  },
+  {
+    "src": "/images/home/gallery/bathrooms/bathrooms-09.jpg",
+    "category": "Bathrooms",
+    "width": 935,
+    "height": 1400,
+    "lifestyle": false
+  },
+  {
+    "src": "/images/home/gallery/bathrooms/bathrooms-10.jpg",
+    "category": "Bathrooms",
+    "width": 938,
+    "height": 1400,
+    "lifestyle": false
+  },
+  {
+    "src": "/images/home/gallery/living-room/living-room-01.jpg",
+    "category": "Living Room",
+    "width": 1400,
+    "height": 935,
+    "lifestyle": false
+  },
+  {
+    "src": "/images/home/gallery/living-room/living-room-02.jpg",
+    "category": "Living Room",
+    "width": 1400,
+    "height": 935,
+    "lifestyle": false
+  },
+  {
+    "src": "/images/home/gallery/living-room/living-room-03.jpg",
+    "category": "Living Room",
+    "width": 1400,
+    "height": 935,
+    "lifestyle": false
+  },
+  {
+    "src": "/images/home/gallery/cabana/cabana-01.jpg",
+    "category": "Cabana",
+    "width": 791,
+    "height": 1400,
+    "lifestyle": true
+  },
+  {
+    "src": "/images/home/gallery/cabana/cabana-02.jpg",
+    "category": "Cabana",
+    "width": 791,
+    "height": 1400,
+    "lifestyle": true
+  },
+  {
+    "src": "/images/home/gallery/cabana/cabana-03.jpg",
+    "category": "Cabana",
+    "width": 791,
+    "height": 1400,
+    "lifestyle": true
+  },
+  {
+    "src": "/images/home/gallery/cabana/cabana-04.jpg",
+    "category": "Cabana",
+    "width": 791,
+    "height": 1400,
+    "lifestyle": true
+  },
+  {
+    "src": "/images/home/gallery/cabana/cabana-05.jpg",
+    "category": "Cabana",
+    "width": 1400,
+    "height": 933,
+    "lifestyle": false
+  },
+  {
+    "src": "/images/home/gallery/cabana/cabana-06.jpg",
+    "category": "Cabana",
+    "width": 1400,
+    "height": 938,
+    "lifestyle": false
+  },
+  {
+    "src": "/images/home/gallery/terrace/terrace-01.jpg",
+    "category": "Terrace",
+    "width": 1400,
+    "height": 1050,
+    "lifestyle": true
+  },
+  {
+    "src": "/images/home/gallery/terrace/terrace-02.jpg",
+    "category": "Terrace",
+    "width": 1400,
+    "height": 935,
+    "lifestyle": true
+  },
+  {
+    "src": "/images/home/gallery/terrace/terrace-03.jpg",
+    "category": "Terrace",
+    "width": 1400,
+    "height": 938,
+    "lifestyle": false
+  },
+  {
+    "src": "/images/home/gallery/terrace/terrace-04.jpg",
+    "category": "Terrace",
+    "width": 1400,
+    "height": 935,
+    "lifestyle": false
+  },
+  {
+    "src": "/images/home/gallery/terrace/terrace-05.jpg",
+    "category": "Terrace",
+    "width": 1400,
+    "height": 933,
+    "lifestyle": false
+  },
+  {
+    "src": "/images/home/gallery/kids-play-area/kids-play-area-01.jpg",
+    "category": "Kids Play Area",
+    "width": 1400,
+    "height": 935,
+    "lifestyle": false
+  },
+  {
+    "src": "/images/home/gallery/kids-play-area/kids-play-area-02.jpg",
+    "category": "Kids Play Area",
+    "width": 1400,
+    "height": 935,
+    "lifestyle": false
+  },
+  {
+    "src": "/images/home/gallery/kids-play-area/kids-play-area-03.jpg",
+    "category": "Kids Play Area",
+    "width": 1400,
+    "height": 935,
+    "lifestyle": false
+  },
+  {
+    "src": "/images/home/gallery/kids-play-area/kids-play-area-04.jpg",
+    "category": "Kids Play Area",
+    "width": 1400,
+    "height": 935,
+    "lifestyle": false
+  },
+  {
+    "src": "/images/home/gallery/exterior/exterior-01.jpg",
+    "category": "Exterior",
+    "width": 787,
+    "height": 1400,
+    "lifestyle": true
+  },
+  {
+    "src": "/images/home/gallery/exterior/exterior-02.jpg",
+    "category": "Exterior",
+    "width": 787,
+    "height": 1400,
+    "lifestyle": true
+  },
+  {
+    "src": "/images/home/gallery/exterior/exterior-03.jpg",
+    "category": "Exterior",
+    "width": 1400,
+    "height": 1050,
+    "lifestyle": false
+  },
+  {
+    "src": "/images/home/gallery/exterior/exterior-04.jpg",
+    "category": "Exterior",
+    "width": 1400,
+    "height": 1050,
+    "lifestyle": false
+  },
+  {
+    "src": "/images/home/gallery/exterior/exterior-05.jpg",
+    "category": "Exterior",
+    "width": 1400,
+    "height": 1050,
+    "lifestyle": false
+  },
+  {
+    "src": "/images/home/gallery/exterior/exterior-06.jpg",
+    "category": "Exterior",
+    "width": 1400,
+    "height": 938,
+    "lifestyle": false
+  },
+  {
+    "src": "/images/home/gallery/exterior/exterior-07.jpg",
+    "category": "Exterior",
+    "width": 1400,
+    "height": 938,
+    "lifestyle": false
+  },
+  {
+    "src": "/images/home/gallery/trek/trek-01.jpg",
+    "category": "Trek",
+    "width": 1127,
+    "height": 1400,
+    "lifestyle": true
+  },
+  {
+    "src": "/images/home/gallery/trek/trek-02.jpg",
+    "category": "Trek",
+    "width": 1127,
+    "height": 1400,
+    "lifestyle": true
+  },
+  {
+    "src": "/images/home/gallery/trek/trek-03.jpg",
+    "category": "Trek",
+    "width": 1127,
+    "height": 1400,
+    "lifestyle": true
+  },
+  {
+    "src": "/images/home/gallery/trek/trek-04.jpg",
+    "category": "Trek",
+    "width": 787,
+    "height": 1400,
+    "lifestyle": true
+  },
+  {
+    "src": "/images/home/gallery/trek/trek-05.jpg",
+    "category": "Trek",
+    "width": 1127,
+    "height": 1400,
+    "lifestyle": true
+  },
+  {
+    "src": "/images/home/gallery/trek/trek-06.jpg",
+    "category": "Trek",
+    "width": 787,
+    "height": 1400,
+    "lifestyle": true
+  },
+  {
+    "src": "/images/home/gallery/more-moments/more-moments-01.jpg",
+    "category": "More Moments",
+    "width": 781,
+    "height": 1400,
+    "lifestyle": true
+  },
+  {
+    "src": "/images/home/gallery/more-moments/more-moments-02.jpg",
+    "category": "More Moments",
+    "width": 781,
+    "height": 1400,
+    "lifestyle": true
+  },
+  {
+    "src": "/images/home/gallery/more-moments/more-moments-03.jpg",
+    "category": "More Moments",
+    "width": 781,
+    "height": 1400,
+    "lifestyle": true
   }
 ];

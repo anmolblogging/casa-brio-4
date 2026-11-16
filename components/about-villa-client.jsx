@@ -23,7 +23,7 @@ import {
   SpeakerSoundIcon,
   TablewareIcon,
 } from "@/components/icons";
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { motion, useScroll, useSpring, useTransform } from "framer-motion";
 import { Reveal } from "@/components/reveal";
 import { SiteHeader } from "@/components/site-header";
@@ -116,40 +116,95 @@ let u = [
   ],
   h = [
     {
-      src: "/images/bungalow/pool-night-pergola.jpg",
-      alt: "Swimming pool at night",
+      src: "/images/home/pool-day.jpg",
+      alt: "Private swimming pool",
     },
     {
-      src: "/images/bungalow/cricket-turf-day.png",
-      alt: "Rooftop cricket turf",
+      src: "/images/home/turf-day.jpg",
+      alt: "Box cricket turf",
     },
     {
-      src: "/images/bungalow/speakeasy-snooker-neon.png",
-      alt: "Party room with snooker table",
+      src: "/images/home/party-50.jpg",
+      alt: "Party room sofas and bar",
     },
     {
-      src: "/images/bungalow/master-suite-view.jpg",
-      alt: "Main bedroom with mountain view",
+      src: "/images/home/bedroom-1.jpg",
+      alt: "Master suite with balcony",
+    },
+    {
+      src: "/images/home/gallery/cabana/cabana-05.jpg",
+      alt: "Poolside cabana",
+    },
+    {
+      src: "/images/home/kids-38.jpg",
+      alt: "Kids play area at night",
     },
   ],
   g = [
     {
-      src: "/images/bungalow/living-dining-view.jpg",
-      alt: "Living and dining room",
+      src: "/images/home/living-1.jpg",
+      alt: "Living room",
     },
     {
-      src: "/images/bungalow/bar-ambiance-warm.png",
-      alt: "Bar with leather seating",
+      src: "/images/home/party-43.jpg",
+      alt: "Snooker table and turf view",
     },
     {
-      src: "/images/bungalow/bedroom-suite-2.jpg",
-      alt: "Bedroom with hill view",
+      src: "/images/home/terrace-sunrise.jpg",
+      alt: "Terrace at sunrise",
     },
     {
-      src: "/images/bungalow/pool-day-pergola.jpg",
-      alt: "Pool deck in the daytime",
+      src: "/images/home/bedroom-17.jpg",
+      alt: "Balcony with valley view",
+    },
+    {
+      src: "/images/home/exterior-sunset.jpg",
+      alt: "Casa Brio at sunset",
+    },
+    {
+      src: "/images/home/gallery/terrace/terrace-02.jpg",
+      alt: "Friends on the terrace at sunset",
     },
   ];
+// Overview photos: cross-fades to the next photo every 2.5 seconds.
+const villaSlides = [
+  { src: "/images/home/exterior-sunset.jpg", alt: "Casa Brio at sunset" },
+  { src: "/images/home/living-1.jpg", alt: "Living room" },
+  { src: "/images/home/pool-day.jpg", alt: "Private swimming pool" },
+  { src: "/images/home/bedroom-1.jpg", alt: "Master suite with balcony" },
+  { src: "/images/home/party-46.jpg", alt: "Party room with snooker table" },
+  { src: "/images/home/turf-day.jpg", alt: "Box cricket turf" },
+  { src: "/images/home/terrace-sunrise.jpg", alt: "Terrace at sunrise" },
+  { src: "/images/home/kids-33.jpg", alt: "Kids play area" },
+];
+function VillaSlideshow() {
+  let [i, setI] = useState(0);
+  useEffect(() => {
+    let t = setInterval(() => setI((v) => (v + 1) % villaSlides.length), 2500);
+    return () => clearInterval(t);
+  }, []);
+  return (
+    <div className="relative aspect-[3/2] w-full overflow-hidden rounded-none border border-[rgba(212,175,55,0.22)] bg-[#121015] shadow-2xl">
+      {villaSlides.map((e, t) => (
+        <img
+          src={e.src}
+          alt={e.alt}
+          loading={t === 0 ? "eager" : "lazy"}
+          className={`absolute inset-0 h-full w-full object-cover object-center transition-opacity duration-1000 ease-in-out ${t === i ? "opacity-100" : "opacity-0"}`}
+          key={e.src}
+        />
+      ))}
+      <div className="absolute bottom-3 left-1/2 z-10 flex -translate-x-1/2 items-center gap-1.5 bg-black/45 px-2 py-1 backdrop-blur-sm">
+        {villaSlides.map((e, t) => (
+          <span
+            className={`h-1 transition-all duration-500 ${t === i ? "w-4 bg-[#d4af37]" : "w-1.5 bg-white/40"}`}
+            key={t}
+          />
+        ))}
+      </div>
+    </div>
+  );
+}
 function B() {
   let e = useRef(null),
     { scrollYProgress: a } = useScroll({
@@ -193,7 +248,7 @@ function B() {
           >
             {x.map((e, t) => (
               <div
-                className="group relative shrink-0 w-[240px] sm:w-[280px] md:w-[320px] lg:w-[340px] h-[190px] sm:h-[230px] md:h-[270px] lg:h-[300px] overflow-hidden rounded-none border border-[rgba(212,175,55,0.22)] bg-[#121015] shadow-[0_15px_35px_rgba(0,0,0,0.85)] transition-colors duration-500 hover:border-[rgba(212,175,55,0.6)]"
+                className="group relative shrink-0 w-[285px] sm:w-[345px] md:w-[405px] lg:w-[450px] h-[190px] sm:h-[230px] md:h-[270px] lg:h-[300px] overflow-hidden rounded-none border border-[rgba(212,175,55,0.22)] bg-[#121015] shadow-[0_15px_35px_rgba(0,0,0,0.85)] transition-colors duration-500 hover:border-[rgba(212,175,55,0.6)]"
                 key={`top-${t}`}
               >
                 <img
@@ -214,7 +269,7 @@ function B() {
           >
             {f.map((e, t) => (
               <div
-                className="group relative shrink-0 w-[240px] sm:w-[280px] md:w-[320px] lg:w-[340px] h-[190px] sm:h-[230px] md:h-[270px] lg:h-[300px] overflow-hidden rounded-none border border-[rgba(212,175,55,0.22)] bg-[#121015] shadow-[0_15px_35px_rgba(0,0,0,0.85)] transition-colors duration-500 hover:border-[rgba(212,175,55,0.6)]"
+                className="group relative shrink-0 w-[285px] sm:w-[345px] md:w-[405px] lg:w-[450px] h-[190px] sm:h-[230px] md:h-[270px] lg:h-[300px] overflow-hidden rounded-none border border-[rgba(212,175,55,0.22)] bg-[#121015] shadow-[0_15px_35px_rgba(0,0,0,0.85)] transition-colors duration-500 hover:border-[rgba(212,175,55,0.6)]"
                 key={`bottom-${t}`}
               >
                 <img
@@ -343,16 +398,7 @@ function AboutVillaClient() {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
             <div className="lg:col-span-6 flex flex-col gap-5">
               <Reveal>
-                <div className="relative h-[320px] sm:h-[420px] w-full overflow-hidden rounded-none border border-[rgba(212,175,55,0.22)] bg-[#121015] shadow-2xl">
-                  <Image
-                    src="/images/bungalow/drone-facade.jpg"
-                    alt="Casa Brio villa with pool and turf"
-                    fill={!0}
-                    className="object-cover object-center transition-transform duration-700 hover:scale-105"
-                    sizes="(max-width: 1024px) 100vw, 50vw"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent pointer-events-none" />
-                </div>
+                <VillaSlideshow />
               </Reveal>
               <Reveal delay={100}>
                 <div className="grid grid-cols-2 gap-4">
@@ -477,19 +523,19 @@ function AboutVillaClient() {
               let A = e.icon;
               return (
                 <Reveal delay={25 * t} className="h-full" key={e.title}>
-                  <div className="group relative flex h-full flex-col justify-between border-b border-r border-[rgba(212,175,55,0.15)] bg-[#0c0a0f] p-3.5 sm:p-6 transition-colors duration-300 hover:bg-[#131017]">
-                    <div>
-                      <div className="mb-2.5 sm:mb-4 text-[#d4af37] transition-transform duration-300 group-hover:scale-110">
-                        <A className="h-6 w-6 sm:h-7 sm:w-7 text-[#d4af37]" />
-                      </div>
+                  <div className="group relative flex h-full items-start gap-3 sm:gap-4 border-b border-r border-[rgba(212,175,55,0.15)] bg-[#0c0a0f] p-3.5 sm:px-5 sm:py-4 transition-colors duration-300 hover:bg-[#131017]">
+                    <div className="shrink-0 text-[#d4af37] transition-transform duration-300 group-hover:scale-110">
+                      <A className="h-6 w-6 sm:h-7 sm:w-7 text-[#d4af37]" />
+                    </div>
+                    <div className="min-w-0">
                       <h3 className="font-serif text-sm sm:text-base font-normal text-[#f4efe6] group-hover:text-[#d4af37] transition-colors leading-snug">
                         {e.title}
                       </h3>
-                      <p className="hidden sm:block mt-1.5 font-sans text-xs font-light text-[#a39c93] leading-relaxed">
+                      <p className="hidden sm:block mt-1 font-sans text-xs font-light text-[#a39c93] leading-relaxed">
                         {e.desc}
                       </p>
                     </div>
-                    <div className="mt-4 h-px w-0 bg-[#d4af37] transition-all duration-500 group-hover:w-full" />
+                    <div className="absolute bottom-0 left-0 h-px w-0 bg-[#d4af37] transition-all duration-500 group-hover:w-full" />
                   </div>
                 </Reveal>
               );
@@ -519,10 +565,8 @@ function AboutVillaClient() {
               <div className="w-[76vw] sm:w-[350px] shrink-0 snap-start flex flex-col">
                 <div className="group flex flex-col justify-between h-full border border-[rgba(212,175,55,0.22)] bg-[#0c0a0f] p-7 sm:p-8 transition-all duration-300 shadow-xl">
                   <div>
-                    <div className="h-9 pb-3 border-b border-[rgba(212,175,55,0.18)] flex items-center justify-between">
-                      <span className="eyebrow text-xs uppercase tracking-[0.24em] font-semibold text-[#d4af37]">
-                        WEEKDAY (MON – THU)
-                      </span>
+                    <div className="pb-4 border-b border-[rgba(212,175,55,0.18)] flex items-start justify-between gap-3">
+                      <span className="flex flex-col"><span className="font-serif text-2xl sm:text-[1.7rem] font-normal leading-tight text-[#f4efe6]">Weekday</span><span className="mt-1 text-[11px] font-semibold uppercase tracking-[0.22em] text-[#d4af37]">Mon – Thu</span></span>
                     </div>
                     <div className="mt-6 flex border border-[rgba(212,175,55,0.25)] bg-[#08080a]">
                       <button
@@ -602,10 +646,8 @@ function AboutVillaClient() {
               <div className="w-[76vw] sm:w-[350px] shrink-0 snap-start flex flex-col">
                 <div className="relative group flex flex-col justify-between h-full border-2 border-[#d4af37] bg-[#131017] p-7 sm:p-8 shadow-[0_12px_45px_rgba(212,175,55,0.18)] transition-all duration-300">
                   <div>
-                    <div className="h-9 pb-3 border-b border-[#d4af37]/30 flex items-center justify-between">
-                      <span className="eyebrow text-xs uppercase tracking-[0.24em] font-semibold text-[#d4af37]">
-                        WEEKEND
-                      </span>
+                    <div className="pb-4 border-b border-[#d4af37]/30 flex items-start justify-between gap-3">
+                      <span className="flex flex-col"><span className="font-serif text-2xl sm:text-[1.7rem] font-normal leading-tight text-[#f4efe6]">Weekend</span><span className="mt-1 text-[11px] font-semibold uppercase tracking-[0.22em] text-[#d4af37]">2-night stay</span></span>
                       <span className="text-[11px] font-semibold uppercase tracking-[0.2em] text-[#d4af37] bg-[#d4af37]/15 px-2.5 py-0.5 border border-[#d4af37]/35">
                         POPULAR
                       </span>
@@ -668,10 +710,8 @@ function AboutVillaClient() {
               <div className="w-[76vw] sm:w-[350px] shrink-0 snap-start flex flex-col pr-2">
                 <div className="group flex flex-col justify-between h-full border border-[rgba(212,175,55,0.22)] bg-[#0c0a0f] p-7 sm:p-8 transition-all duration-300 shadow-xl">
                   <div>
-                    <div className="h-9 pb-3 border-b border-[rgba(212,175,55,0.18)] flex items-center justify-between">
-                      <span className="eyebrow text-xs uppercase tracking-[0.24em] font-semibold text-[#d4af37]">
-                        FRIDAY OR SUNDAY
-                      </span>
+                    <div className="pb-4 border-b border-[rgba(212,175,55,0.18)] flex items-start justify-between gap-3">
+                      <span className="flex flex-col"><span className="font-serif text-2xl sm:text-[1.7rem] font-normal leading-tight text-[#f4efe6]">Friday or Sunday</span><span className="mt-1 text-[11px] font-semibold uppercase tracking-[0.22em] text-[#d4af37]">Single night</span></span>
                     </div>
                     <div className="mt-6 flex border border-[rgba(212,175,55,0.25)] bg-[#08080a]">
                       <div className="w-full py-2.5 text-center text-xs font-semibold uppercase tracking-[0.16em] text-[#d4af37]">
@@ -734,10 +774,8 @@ function AboutVillaClient() {
             <Reveal delay={0} className="h-full">
               <div className="group flex flex-col justify-between h-full border border-[rgba(212,175,55,0.22)] bg-[#0c0a0f] p-8 sm:p-10 transition-all duration-300 hover:border-[#d4af37] hover:bg-[#121015]">
                 <div>
-                  <div className="h-9 pb-3 border-b border-[rgba(212,175,55,0.18)] flex items-center justify-between">
-                    <span className="eyebrow text-xs uppercase tracking-[0.24em] font-semibold text-[#d4af37]">
-                      WEEKDAY (MON – THU)
-                    </span>
+                  <div className="pb-4 border-b border-[rgba(212,175,55,0.18)] flex items-start justify-between gap-3">
+                    <span className="flex flex-col"><span className="font-serif text-2xl sm:text-[1.7rem] font-normal leading-tight text-[#f4efe6]">Weekday</span><span className="mt-1 text-[11px] font-semibold uppercase tracking-[0.22em] text-[#d4af37]">Mon – Thu</span></span>
                   </div>
                   <div className="mt-6 flex border border-[rgba(212,175,55,0.25)] bg-[#08080a]">
                     <button
@@ -817,10 +855,8 @@ function AboutVillaClient() {
             <Reveal delay={100} className="h-full">
               <div className="relative group flex flex-col justify-between h-full border-2 border-[#d4af37] bg-[#131017] p-8 sm:p-10 shadow-[0_12px_45px_rgba(212,175,55,0.18)] transition-all duration-300 hover:shadow-[0_16px_55px_rgba(212,175,55,0.28)]">
                 <div>
-                  <div className="h-9 pb-3 border-b border-[#d4af37]/30 flex items-center justify-between">
-                    <span className="eyebrow text-xs uppercase tracking-[0.24em] font-semibold text-[#d4af37]">
-                      WEEKEND
-                    </span>
+                  <div className="pb-4 border-b border-[#d4af37]/30 flex items-start justify-between gap-3">
+                    <span className="flex flex-col"><span className="font-serif text-2xl sm:text-[1.7rem] font-normal leading-tight text-[#f4efe6]">Weekend</span><span className="mt-1 text-[11px] font-semibold uppercase tracking-[0.22em] text-[#d4af37]">2-night stay</span></span>
                     <span className="text-[11px] font-semibold uppercase tracking-[0.2em] text-[#d4af37] bg-[#d4af37]/15 px-2.5 py-0.5 border border-[#d4af37]/35">
                       POPULAR
                     </span>
@@ -883,10 +919,8 @@ function AboutVillaClient() {
             <Reveal delay={200} className="h-full">
               <div className="group flex flex-col justify-between h-full border border-[rgba(212,175,55,0.22)] bg-[#0c0a0f] p-8 sm:p-10 transition-all duration-300 hover:border-[#d4af37] hover:bg-[#121015]">
                 <div>
-                  <div className="h-9 pb-3 border-b border-[rgba(212,175,55,0.18)] flex items-center justify-between">
-                    <span className="eyebrow text-xs uppercase tracking-[0.24em] font-semibold text-[#d4af37]">
-                      FRIDAY OR SUNDAY
-                    </span>
+                  <div className="pb-4 border-b border-[rgba(212,175,55,0.18)] flex items-start justify-between gap-3">
+                    <span className="flex flex-col"><span className="font-serif text-2xl sm:text-[1.7rem] font-normal leading-tight text-[#f4efe6]">Friday or Sunday</span><span className="mt-1 text-[11px] font-semibold uppercase tracking-[0.22em] text-[#d4af37]">Single night</span></span>
                   </div>
                   <div className="mt-6 flex border border-[rgba(212,175,55,0.25)] bg-[#08080a]">
                     <div className="w-full py-2.5 text-center text-xs font-semibold uppercase tracking-[0.16em] text-[#d4af37]">

@@ -7,12 +7,12 @@ let r = [
   {
     author: "Jash Hakani",
     quote:
-      "Amazing villa!! Great mountain view\nGreat property & very well maintained\nrooms were spacious and clean, and all the amenities were excellent\nSpecially whole separate themed party room/cricket turf / kids play area\nThe caretaker service was outstanding Very polite, helpful, and cooperative throughout our stay. All our needs were taken care of\n[...]\nWould definitely love to visit again",
+      "Amazing villa!! Great mountain view\nGreat property & very well maintained\nrooms were spacious and clean, and all the amenities were excellent\nSpecially whole separate themed party room/cricket turf / kids play area\nThe caretaker service was outstanding Very polite, helpful, and cooperative throughout our stay. All our needs were taken care of\nWould definitely love to visit again",
   },
   {
     author: "Nilofer Qureshi",
     quote:
-      "It was sheer delight staying in this bungalow. [...] Their turf is huge, the pool is enough big for grow ups also they have smaller pools for kids.",
+      "It was sheer delight staying in this bungalow. Their turf is huge, the pool is enough big for grow ups also they have smaller pools for kids.",
   },
   {
     author: "Jitendra Kumar",
@@ -42,7 +42,7 @@ let r = [
   {
     author: "Farheen Qureshi",
     quote:
-      "We recently stayed at Casa Brio in Lonavala, and it was a truly wonderful experience from start to finish. The villa is beautiful, incredibly spacious, and perfect for a relaxing getaway with family or friends. [...] The overall vibe of the villa is peaceful, clean, and luxurious. The staff was incredibly hospitable and made sure we had everything we needed.",
+      "We recently stayed at Casa Brio in Lonavala, and it was a truly wonderful experience from start to finish. The villa is beautiful, incredibly spacious, and perfect for a relaxing getaway with family or friends. The overall vibe of the villa is peaceful, clean, and luxurious. The staff was incredibly hospitable and made sure we had everything we needed.",
   },
   {
     author: "Savita Mohite",
@@ -50,6 +50,9 @@ let r = [
       "Finding a villa that is as clean as the photos is rare, but this place was truly excellent. The staff went out of their way to assist us. Since our family was traveling from both Mumbai and Pune, the location was perfect. The villa is very well maintained, and the 360-degree hill views from the terrace are beautiful - perfect for a morning chai.",
   },
 ];
+// Reviews with a photo first, then the longest reviews, then short ones.
+// To show a reviewer's profile picture, add `photo: "/images/reviews/name.jpg"`.
+r.sort((a, b) => (b.photo ? 1 : 0) - (a.photo ? 1 : 0) || b.quote.length - a.quote.length);
 const GOOGLE_REVIEWS_URL =
   "https://www.google.com/travel/search?q=Casa%20Brio&g2lb=4899571%2C4899573%2C4965990%2C72471280%2C72573224%2C72647020%2C72686036%2C72799179%2C72803964%2C72880339%2C72882230%2C73064764%2C121529350%2C121608706%2C121738283%2C121921501%2C121951222%2C122078727%2C122093076%2C122097171%2C122192361&hl=en-IN&gl=in&ssta=1&ts=CAEaKwopEicyJTB4M2JjMmI3ZDk1ODQ0NDQxNzoweDJlYTg5MTY2ZjA0NWU0YzM&qs=CAEyE0Nnb0l3OG1YZ3Utc3BOUXVFQUU4Ag&ap=ugEHcmV2aWV3cw&ictx=111&ved=0CAAQ5JsGahcKEwjYjMWcz-iXAxUAAAAAHQAAAAAQAw";
 function S(a, e) {
@@ -269,6 +272,13 @@ function D({ review: e }) {
       </div>
       <div className="mt-8 border-t border-[rgba(212,175,55,0.15)] pt-5">
         <div className="flex items-center gap-3">
+          {e.photo ? (
+            <img
+              src={e.photo}
+              alt=""
+              className="h-10 w-10 shrink-0 rounded-full border border-[#d4af37]/40 object-cover"
+            />
+          ) : (
           <span
             aria-hidden="true"
             className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-[#d4af37]/40 bg-[#1b1720] font-sans text-sm font-semibold text-[#d4af37]"
@@ -280,6 +290,7 @@ function D({ review: e }) {
               .join("")
               .toUpperCase()}
           </span>
+          )}
           <div>
             <h3 className="font-serif text-base font-normal tracking-tight text-[#f4efe6] group-hover:text-[#d4af37] transition-colors">
               {e.author}

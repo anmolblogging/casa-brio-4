@@ -5,257 +5,28 @@ import { useCallback, useEffect, useMemo, useState } from "react";
 import { SiteHeader } from "@/components/site-header";
 import { Reveal } from "@/components/reveal";
 import { AnimatePresence, motion } from "framer-motion";
-import Image from "next/image";
 import Link from "next/link";
 import { whatsappUrl } from "@/components/whatsapp";
 import { Footer } from "@/components/footer";
 import { FramePhoto } from "@/components/lightbox";
-import { galleryPhotos } from "@/components/gallery-photos";
+import { galleryCategories, galleryPhotos } from "@/components/gallery-photos";
 let P = Maximize2;
 // How many photos the grid shows at first, and adds each time "Load more" is clicked.
 const PAGE_SIZE = 24;
 // How many thumbnails the full-screen viewer shows on each side of the current photo.
 const THUMB_RADIUS = 5;
-let b = [
-    {
-      id: "facade-drone",
-      src: "/images/bungalow/drone-facade.jpg",
-      title: "The Villa from Above",
-      category: "Pool & Deck",
-      aspect: "wide",
-      caption: "A drone view of the villa and its grounds near Tungarli hill.",
-    },
-    {
-      id: "snooker-hero",
-      src: "/images/bungalow/snooker-bar-lounge.jpg",
-      title: "Snooker Table",
-      category: "Party Room & Bar",
-      aspect: "landscape",
-      caption: "A full-size snooker table with bright lights above it.",
-    },
-    {
-      id: "billiards-leather",
-      src: "/images/bungalow/billiards-leather-lounge.png",
-      title: "Leather Sofas",
-      category: "Party Room & Bar",
-      aspect: "portrait",
-      caption: "Brown leather chairs and cue racks in the party room.",
-    },
-    {
-      id: "bar-counter",
-      src: "/images/bungalow/bar-counter-snooker.png",
-      title: "Private Bar",
-      category: "Party Room & Bar",
-      aspect: "portrait",
-      caption: "A lit-up bar with glasses and a drinks counter.",
-    },
-    {
-      id: "turf-day",
-      src: "/images/bungalow/cricket-turf-day.png",
-      title: "Box Cricket Turf",
-      category: "Cricket Turf",
-      aspect: "wide",
-      caption: "A netted turf for cricket, day or night.",
-    },
-    {
-      id: "pool-night",
-      src: "/images/bungalow/pool-night-pergola.jpg",
-      title: "Pool at Night",
-      category: "Pool & Deck",
-      aspect: "landscape",
-      caption: "Blue underwater lights make the pool glow at night.",
-    },
-    {
-      id: "pool-day",
-      src: "/images/bungalow/pool-day-pergola.jpg",
-      title: "Pool in the Daytime",
-      category: "Pool & Deck",
-      aspect: "landscape",
-      caption: "Clear water with a wooden deck and shaded seating.",
-    },
-    {
-      id: "master-suite",
-      src: "/images/bungalow/master-suite-view.jpg",
-      title: "Main Bedroom",
-      category: "Bedrooms & Living",
-      aspect: "landscape",
-      caption: "Big glass doors that open onto a balcony with hill views.",
-    },
-    {
-      id: "living-salon",
-      src: "/images/bungalow/living-lounge-party.jpg",
-      title: "Living Room",
-      category: "Bedrooms & Living",
-      aspect: "landscape",
-      caption: "A large living room with comfy sofas and soft lighting.",
-    },
-    {
-      id: "living-dining",
-      src: "/images/bungalow/living-dining-view.jpg",
-      title: "Dining Area",
-      category: "Bedrooms & Living",
-      aspect: "landscape",
-      caption: "A 12-seater marble dining table for meals cooked by the chef.",
-    },
-    {
-      id: "speakeasy-neon",
-      src: "/images/bungalow/speakeasy-snooker-neon.png",
-      title: "Party Room Lights",
-      category: "Party Room & Bar",
-      aspect: "portrait",
-      caption: "Mood lights, art on the walls and a fun night-time feel.",
-    },
-    {
-      id: "snooker-corner",
-      src: "/images/bungalow/snooker-corner-cue.png",
-      title: "Snooker Cues",
-      category: "Party Room & Bar",
-      aspect: "portrait",
-      caption: "Cues and snooker gear, ready to play.",
-    },
-    {
-      id: "bar-ambiance",
-      src: "/images/bungalow/bar-ambiance-warm.png",
-      title: "The Bar Shelf",
-      category: "Party Room & Bar",
-      aspect: "portrait",
-      caption: "Warm lights on a shelf of whisky and rum.",
-    },
-    {
-      id: "turf-night",
-      src: "/images/bungalow/turf-play-night.jpg",
-      title: "Night Cricket",
-      category: "Cricket Turf",
-      aspect: "landscape",
-      caption: "Bright floodlights so you can play cricket and football at night.",
-    },
-    {
-      id: "turf-angle-2",
-      src: "/images/bungalow/turf-angle-2.png",
-      title: "Turf with Hill Views",
-      category: "Cricket Turf",
-      aspect: "landscape",
-      caption: "Nets all around so the ball stays in, with hills in the background.",
-    },
-    {
-      id: "turf-angle-3",
-      src: "/images/bungalow/turf-angle-3.png",
-      title: "Space for Many Sports",
-      category: "Cricket Turf",
-      aspect: "landscape",
-      caption: "Big enough for cricket, football and team games.",
-    },
-    {
-      id: "bedroom-suite-2",
-      src: "/images/bungalow/bedroom-suite-2.jpg",
-      title: "Bedroom 2",
-      category: "Bedrooms & Living",
-      aspect: "landscape",
-      caption: "Soft king bed, a quiet room and fresh hill air.",
-    },
-    {
-      id: "bedroom-suite-3",
-      src: "/images/bungalow/bedroom-suite-3.jpg",
-      title: "Bedroom 3",
-      category: "Bedrooms & Living",
-      aspect: "landscape",
-      caption: "A simple, stylish room with wooden details and warm lamps.",
-    },
-    {
-      id: "estate-balcony",
-      src: "/images/bungalow/estate-balcony-view.jpg",
-      title: "Balcony View",
-      category: "Bedrooms & Living",
-      aspect: "landscape",
-      caption: "A great spot for morning coffee while the mist rolls over the valley.",
-    },
-    {
-      id: "designer-bath",
-      src: "/images/bungalow/designer-washroom.jpg",
-      title: "Marble Bathroom",
-      category: "Bedrooms & Living",
-      aspect: "landscape",
-      caption: "Attached bathroom with a rain shower, modern sink and gold taps.",
-    },
-    {
-      id: "suite-cocktails",
-      src: "/images/bungalow/suite-evening-cocktails.png",
-      title: "Evening Drinks",
-      category: "Party Room & Bar",
-      aspect: "portrait",
-      caption: "Drinks made fresh for you by the villa staff.",
-    },
-    {
-      id: "party-lounge-detail",
-      src: "/images/bungalow/party-lounge-detail.jpg",
-      title: "Lounge Seating",
-      category: "Party Room & Bar",
-      aspect: "landscape",
-      caption: "Big sofas for card games, music and long chats.",
-    },
-    {
-      id: "interior-portrait-1",
-      src: "/images/bungalow/interior-portrait-1.jpg",
-      title: "Staircase",
-      category: "Bedrooms & Living",
-      aspect: "portrait",
-      caption: "Wooden steps and brass railings that connect the floors.",
-    },
-    {
-      id: "interior-portrait-2",
-      src: "/images/bungalow/interior-portrait-2.jpg",
-      title: "Entrance",
-      category: "Bedrooms & Living",
-      aspect: "portrait",
-      caption: "Modern art and bright lights at the entrance.",
-    },
-    {
-      id: "garden-lounge",
-      src: "/images/bungalow/garden-lounge.jpg",
-      title: "Garden Lawn",
-      category: "Pool & Deck",
-      aspect: "landscape",
-      caption: "A green lawn next to the pool, great for breakfast outside."
-    },
-    {
-      id: "kids-play",
-      src: "/images/bungalow/kids-play-area.jpg",
-      title: "Play Area",
-      category: "Cricket Turf",
-      aspect: "landscape",
-      caption: "A lawn for family games and kids' play.",
-    },
-    ...galleryPhotos,
-  ],
+// Every photo from the Google Drive folders, one tab per folder.
+let b = galleryPhotos.map((e) => ({
+    ...e,
+    id: e.src,
+    title: `${e.category} at Casa Brio`,
+  })),
   x = [
-    {
-      label: "All",
-      count: b.length,
-    },
-    {
-      label: "Party Room & Bar",
-      count: b.filter((e) => "Party Room & Bar" === e.category).length,
-    },
-    {
-      label: "Pool & Deck",
-      count: b.filter((e) => "Pool & Deck" === e.category).length,
-    },
-    {
-      label: "Bedrooms & Living",
-      count: b.filter((e) => "Bedrooms & Living" === e.category).length,
-    },
-    {
-      label: "Cricket Turf",
-      count: b.filter((e) => "Cricket Turf" === e.category).length,
-    },
-    {
-      label: "Exterior & Views",
-      count: b.filter((e) => "Exterior & Views" === e.category).length,
-    },
-    {
-      label: "Kids Play Area",
-      count: b.filter((e) => "Kids Play Area" === e.category).length,
-    },
+    { label: "All", count: b.length },
+    ...galleryCategories.map((c) => ({
+      label: c,
+      count: b.filter((e) => e.category === c).length,
+    })),
   ];
 export const GalleryClient = function () {
   let [e, d] = useState("All"),
@@ -359,58 +130,35 @@ export const GalleryClient = function () {
             </div>
           </section>
           <section className="relative mx-auto w-full max-w-7xl px-6 sm:px-8 lg:px-12 pb-20 sm:pb-24">
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 lg:auto-rows-[240px] lg:grid-flow-row-dense gap-4 sm:gap-5">
-              <AnimatePresence mode="popLayout">
-                {j.slice(0, visibleCount).map((e, r) => {
-                  let a = r % 8,
-                    o = "lg:col-span-1 lg:row-span-1";
-                  return (
-                    0 === a || 7 === a
-                      ? (o = "lg:col-span-2 lg:row-span-2")
-                      : (3 === a || 6 === a) && (o = "lg:col-span-2 lg:row-span-1"),
-                    // Tall photos get a tall tile so heads and faces are not cropped off.
-                    "portrait" === e.aspect && (o = "lg:col-span-1 lg:row-span-2"),
-                    (
-                      <motion.div
-                        layout={!0}
-                        initial={{
-                          opacity: 0,
-                          y: 16,
-                        }}
-                        animate={{
-                          opacity: 1,
-                          y: 0,
-                        }}
-                        exit={{
-                          opacity: 0,
-                          scale: 0.96,
-                        }}
-                        transition={{
-                          duration: 0.35,
-                          delay: (r % 8) * 0.03,
-                        }}
-                        className={`group relative ${"portrait" === e.aspect ? "h-[520px] sm:h-[500px]" : "h-[260px] sm:h-[290px]"} lg:h-full w-full overflow-hidden rounded-none border border-[rgba(212,175,55,0.22)] bg-white/[0.06] cursor-pointer transition-all duration-300 hover:border-[#d4af37] shadow-lg hover:shadow-[0_12px_36px_rgba(0,0,0,0.85)] ${o}`}
-                        onClick={() => {
-                          y(r);
-                        }}
-                        key={e.id}
-                      >
-                        <Image
-                          src={e.src}
-                          alt={e.title}
-                          fill={!0}
-                          className="object-contain transition-transform duration-700 ease-out group-hover:scale-105"
-                          sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 50vw"
-                        />
-                        <div className="absolute inset-0 bg-black/25 opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
-                        <div className="absolute top-4 right-4 z-10 flex h-9 w-9 items-center justify-center rounded-full bg-[#08080a]/80 backdrop-blur-md border border-[rgba(212,175,55,0.35)] text-[#f5d77f] opacity-0 transition-all duration-300 group-hover:opacity-100 group-hover:scale-105">
-                          <P className="h-4 w-4" />
-                        </div>
-                      </motion.div>
-                    )
-                  );
-                })}
-              </AnimatePresence>
+            {/* True masonry: CSS columns, each photo at its own shape, so there are no empty gaps. */}
+            <div className="columns-1 sm:columns-2 lg:columns-3 gap-4 sm:gap-5">
+              {j.slice(0, visibleCount).map((e, r) => (
+                <motion.button
+                  type="button"
+                  initial={{ opacity: 0, y: 16 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.35, delay: (r % 6) * 0.03 }}
+                  className="group relative mb-4 sm:mb-5 block w-full break-inside-avoid overflow-hidden border border-[rgba(212,175,55,0.22)] bg-[#121015] cursor-pointer transition-all duration-300 hover:border-[#d4af37] shadow-lg hover:shadow-[0_12px_36px_rgba(0,0,0,0.85)]"
+                  onClick={() => {
+                    y(r);
+                  }}
+                  aria-label={`Open photo: ${e.title}`}
+                  key={`${e.id}-${e.category}`}
+                >
+                  <img
+                    src={e.src}
+                    alt={e.title}
+                    width={e.width}
+                    height={e.height}
+                    loading={r < 6 ? "eager" : "lazy"}
+                    className="block h-auto w-full transition-transform duration-700 ease-out group-hover:scale-105"
+                  />
+                  <div className="absolute inset-0 bg-black/25 opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
+                  <div className="absolute top-4 right-4 z-10 flex h-9 w-9 items-center justify-center rounded-full bg-[#08080a]/80 backdrop-blur-md border border-[rgba(212,175,55,0.35)] text-[#f5d77f] opacity-0 transition-all duration-300 group-hover:opacity-100 group-hover:scale-105">
+                    <P className="h-4 w-4" />
+                  </div>
+                </motion.button>
+              ))}
             </div>
             {visibleCount < j.length && (
               <div className="mt-10 flex flex-col items-center gap-3">
@@ -500,12 +248,11 @@ export const GalleryClient = function () {
                       className={`relative h-12 w-16 sm:h-14 sm:w-20 overflow-hidden border transition-all duration-300 cursor-pointer shrink-0 rounded-none ${r === u ? "border-[#d4af37] scale-105 shadow-[0_0_12px_rgba(212,175,55,0.6)] ring-1 ring-[#d4af37]" : "border-white/20 opacity-50 hover:opacity-100 hover:border-white/50"}`}
                       key={e.id}
                     >
-                      <Image
+                      <img
                         src={e.src}
                         alt={e.title}
-                        fill={!0}
-                        sizes="80px"
-                        className="object-cover object-center"
+                        loading="lazy"
+                        className="absolute inset-0 h-full w-full object-cover object-center"
                       />
                     </button>
                     );
