@@ -35,7 +35,7 @@ let f = [
       href: "/about-villa",
     },
     {
-      label: "Chef & Meals",
+      label: "Food & Meals",
       href: "/contact",
     },
   ],
@@ -99,7 +99,7 @@ function Footer({ hideInquiryBanner: t } = {}) {
                       </span>
                       <span className="flex items-center gap-2">
                         <span className="h-1 w-1 rounded-full bg-[#d4af37]" />
-                        Your Own Chef & Staff
+                        Staff On Hand
                       </span>
                       <span className="flex items-center gap-2">
                         <span className="h-1 w-1 rounded-full bg-[#d4af37]" />
@@ -208,9 +208,9 @@ function Footer({ hideInquiryBanner: t } = {}) {
                   <MapPin className="mt-1 h-4 w-4 shrink-0 text-[#c8a951]" />
                   <div className="font-sans text-[13.5px] font-light leading-[1.65] text-white/70">
                     <p className="font-medium text-[#f4f0e8]">Casa Brio,</p>
-                    <p>Tungarli Hill Road,</p>
-                    <p>Near Tungarli Lake,</p>
-                    <p>Lonavala, Maharashtra 410401</p>
+                    <p>Gutt No. 294, Plot No. 90,</p>
+                    <p>Karandoli, Lonavala,</p>
+                    <p>Maharashtra 410405</p>
                   </div>
                 </div>
                 <div className="mt-4 border-t border-white/[0.06] pt-3.5 font-sans text-[12.5px] text-white/45">
@@ -218,7 +218,7 @@ function Footer({ hideInquiryBanner: t } = {}) {
                   <p className="mt-1">🚗 About 60 mins from Pune (by Expressway)</p>
                 </div>
                 <a
-                  href="https://www.google.com/maps/search/?api=1&query=Tungarli+Lake+Lonavala+Maharashtra+410401"
+                  href="https://maps.app.goo.gl/t7GEnV62NWvh3u6b6"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="mt-4 inline-flex items-center gap-2 font-sans text-[11px] font-medium uppercase tracking-[0.2em] text-[#d8bd61] transition-colors hover:text-[#faebd0]"

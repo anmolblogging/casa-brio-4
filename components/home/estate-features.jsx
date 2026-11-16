@@ -111,8 +111,8 @@ let c = [
   },
   {
     "title": "Bedrooms with a View",
-    "category": "6 MASTER SUITES",
-    "description": "Six master suites with king-size beds, attached bathrooms and views of the hills.",
+    "category": "4 BHK",
+    "description": "Four bedrooms, each with an attached bathroom and views of the hills.",
     "images": [
       {
         "src": "/images/home/bedroom-1.jpg",

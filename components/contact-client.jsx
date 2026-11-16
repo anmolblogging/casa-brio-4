@@ -11,7 +11,7 @@ let I = Check;
 let C = CircleCheck;
 let M = MessageSquare;
 let U = ArrowUpRight;
-let o = encodeURIComponent("Tungarli Lake, Lonavala, Maharashtra 410401");
+let o = encodeURIComponent("Casa Brio, Gutt No 294, Plot No 90, Karandoli, Lonavala, Maharashtra 410405");
 function ContactClient() {
   let [e, r] = useState({
       name: "",
@@ -267,7 +267,7 @@ I would like to book the villa:
                         </p>
                         <div className="grid gap-x-8 gap-y-4 sm:grid-cols-2">
                           {[
-                            "Chef-Cooked BBQ & Meals",
+                            "BBQ & Meals",
                             "Bartender for the Party Room",
                             "Cricket Match Setup",
                             "Car Pickup from Mumbai/Pune",
@@ -420,11 +420,11 @@ I would like to book the villa:
                         <p className="mt-3 text-sm leading-6 text-neutral-300">
                           Casa Brio,
                           <br />
-                          Tungarli Hill Road,
+                          Gutt No. 294, Plot No. 90,
                           <br />
-                          Near Tungarli Lake,
+                          Karandoli, Lonavala,
                           <br />
-                          Lonavala, Maharashtra 410401
+                          Maharashtra 410405
                         </p>
                       </div>
                     </div>
@@ -492,7 +492,7 @@ I would like to book the villa:
                   </h2>
                 </div>
                 <a
-                  href={`https://www.google.com/maps/search/?api=1&query=${o}`}
+                  href="https://maps.app.goo.gl/t7GEnV62NWvh3u6b6"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="group inline-flex items-center gap-2 self-start border-b border-[#b99a55] pb-2 text-[12px] font-medium uppercase tracking-[0.2em] text-[#d0b36d] transition-colors hover:text-white sm:self-auto"

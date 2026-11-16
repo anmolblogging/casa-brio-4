@@ -1,11 +1,8 @@
 "use client";
 
 import {
-  AcousticGuitarIcon,
-  BabyHighChairIcon,
   CheckInTimeIcon,
   CheckOutTimeIcon,
-  CinemaProjectorIcon,
   CocktailLoungeIcon,
   CricketTurfIcon,
   DiningSalonIcon,
@@ -35,13 +32,13 @@ import { Footer } from "@/components/footer";
 let u = [
     {
       icon: LuxurySuitesIcon,
-      title: "6 AC Bedrooms",
-      desc: "King beds, attached bathrooms and fresh sheets",
+      title: "4 AC Bedrooms (4 BHK)",
+      desc: "Every bedroom has its own attached bathroom",
     },
     {
       icon: ItalianWashroomIcon,
-      title: "6 Attached Bathrooms",
-      desc: "Hot water, rain showers and towels",
+      title: "4 Attached Bathrooms + 1 Common",
+      desc: "Plus a common washroom in the living area",
     },
     {
       icon: PoolIcon,
@@ -56,12 +53,17 @@ let u = [
     {
       icon: CocktailLoungeIcon,
       title: "Party Room",
-      desc: "Snooker, bar, disco lights and a 4K projector",
+      desc: "Snooker, bar, disco lights and music",
     },
     {
       icon: GuestsGroupIcon,
       title: "Up to 25 Guests",
       desc: "Only one group stays at a time",
+    },
+    {
+      icon: LuxurySuitesIcon,
+      title: "8 Extra Mattresses",
+      desc: "Up to 8 extra mattresses on request",
     },
     {
       icon: SmartTvIcon,
@@ -84,29 +86,14 @@ let u = [
       desc: "Party lights inside the party room",
     },
     {
-      icon: CinemaProjectorIcon,
-      title: "4K Projector",
-      desc: "With surround sound for late-night movies",
-    },
-    {
-      icon: AcousticGuitarIcon,
-      title: "Guitar",
-      desc: "For anyone who likes to play",
-    },
-    {
       icon: KitchenEquippedIcon,
       title: "Full Kitchen",
       desc: "Microwave, refrigerator, gas stove, toaster & RO water",
     },
     {
       icon: DiningSalonIcon,
-      title: "8-Seater Dining Table",
-      desc: "One big table for group meals",
-    },
-    {
-      icon: BabyHighChairIcon,
-      title: "Baby High Chair",
-      desc: "For families with small kids",
+      title: "6-Seater Dining Table",
+      desc: "A dining table for group meals",
     },
     {
       icon: TablewareIcon,
@@ -353,10 +340,10 @@ function AboutVillaClient() {
                     </div>
                     <div className="flex flex-col text-left">
                       <span className="font-serif text-3xl sm:text-4xl font-normal text-[#f4efe6] group-hover:text-[#d4af37] transition-colors leading-none">
-                        6
+                        4
                       </span>
                       <span className="mt-1.5 font-sans text-xs uppercase tracking-[0.24em] font-semibold text-[#a39c93] group-hover:text-[#f4efe6] transition-colors">
-                        BEDROOMS
+                        BEDROOMS (4 BHK)
                       </span>
                     </div>
                   </div>
@@ -445,7 +432,7 @@ function AboutVillaClient() {
                 </h2>
                 <p className="font-sans text-sm sm:text-base font-light leading-[1.85] text-[#e6dfd5]/90 mb-6">
                   Casa Brio has a big, open living room that leads straight to your private pool
-                  and wooden deck. There are six AC bedrooms, so everyone can rest well.
+                  and wooden deck. It is a 4 BHK: four AC bedrooms, each with an attached bathroom, plus a common washroom in the living area.
                 </p>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3.5 pt-4 border-t border-[rgba(212,175,55,0.18)]">
                   {[
@@ -456,8 +443,8 @@ function AboutVillaClient() {
                     },
                     {
                       icon: LuxurySuitesIcon,
-                      title: "6 AC Bedrooms",
-                      desc: "King beds, attached bathrooms and balconies",
+                      title: "4 AC Bedrooms (4 BHK)",
+                      desc: "Each with an attached bathroom",
                     },
                     {
                       icon: LivingSalonIcon,
@@ -467,7 +454,7 @@ function AboutVillaClient() {
                     {
                       icon: GuestsGroupIcon,
                       title: "Up to 25 Guests",
-                      desc: "Extra mattresses available",
+                      desc: "Up to 8 extra mattresses available",
                     },
                   ].map((e) => {
                     let T = e.icon;

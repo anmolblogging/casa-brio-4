@@ -15,10 +15,10 @@ let m = [
     vibe: "Welcome Drinks",
     title: "Check-in and Welcome Lunch",
     description:
-      "Check in at 2:00 PM. Relax in the cool living room with a welcome drink, then enjoy a lunch cooked by your private chef.",
+      "Check in at 2:00 PM. Relax in the cool living room with a welcome drink, then sit down to lunch together.",
     highlights: [
       "Cold welcome drinks and fresh towels when you arrive",
-      "A full lunch cooked by your private chef",
+      "Lunch served for the whole group",
       "Help with your bags and a quick tour of your room",
     ],
     images: ["/images/home/gallery/exterior/exterior-02.jpg", "/images/home/gallery/bedrooms/bedrooms-07.jpg"],

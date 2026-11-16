@@ -10,7 +10,7 @@ import {
   LivingSalonIcon,
   LuxurySuitesIcon,
   PoolIcon,
-  PrivateChefIcon,
+  TablewareIcon,
   SingleGroupBuyoutIcon,
   TerraceGardenIcon,
 } from "@/components/icons";
@@ -34,13 +34,13 @@ let i = [
   },
   {
     icon: LuxurySuitesIcon,
-    label: "6 Master Suites",
-    detail: "Mountain views and attached bathrooms",
+    label: "4 Bedrooms (4 BHK)",
+    detail: "All with attached bathrooms and mountain views",
   },
   {
-    icon: PrivateChefIcon,
-    label: "Private Chef & Staff",
-    detail: "Here to help with meals and anything you need",
+    icon: TablewareIcon,
+    label: "Meals Arranged",
+    detail: "Some food cooked in-house, the rest ordered in",
   },
   {
     icon: LivingSalonIcon,
@@ -50,7 +50,7 @@ let i = [
   {
     icon: ItalianWashroomIcon,
     label: "Modern Bathrooms",
-    detail: "Marble finish and rain showers",
+    detail: "4 attached, plus 1 common washroom",
   },
   {
     icon: TerraceGardenIcon,

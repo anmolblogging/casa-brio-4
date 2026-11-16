@@ -39,10 +39,10 @@ function HomeAbout() {
                   </div>
                   <div>
                     <div className="font-serif text-2xl sm:text-3xl text-[#d4af37]">
-                      6 Master Suites
+                      4 BHK Villa
                     </div>
                     <div className="font-sans text-xs text-[#a39c93] uppercase tracking-wider mt-1">
-                      Mountain Views
+                      Attached Bathrooms
                     </div>
                   </div>
                 </div>
@@ -50,7 +50,7 @@ function HomeAbout() {
                   <div className="group flex items-start gap-3 border-b border-r border-[rgba(212,175,55,0.15)] px-5 py-4 transition-colors duration-300 hover:bg-[#121015] flex-1">
                     <span className="mt-1.5 h-1.5 w-1.5 bg-[#d4af37] shrink-0" />
                     <span className="font-sans text-sm font-light text-[#f4efe6] leading-relaxed">
-                      Your own chef and staff, ready when you need them
+                      Staff on hand, with meals arranged for your group
                     </span>
                   </div>
                   <div className="group flex items-start gap-3 border-b border-r border-[rgba(212,175,55,0.15)] px-5 py-4 transition-colors duration-300 hover:bg-[#121015] flex-1">
