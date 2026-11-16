@@ -111,20 +111,20 @@ function Amenities() {
               r = e.label === "Party Room",
               l = (
                 <>
-                  <div className="relative z-10">
-                    <div className="mb-2.5 sm:mb-3.5 flex items-center justify-between">
-                      <div className="text-[#d4af37] transition-transform duration-300 group-hover:scale-110">
-                        <I className="h-6 w-6 sm:h-7 sm:w-7 text-[#d4af37]" />
-                      </div>
+                  <div className="relative z-10 flex items-start gap-3 sm:gap-4">
+                    <div className="shrink-0 text-[#d4af37] transition-transform duration-300 group-hover:scale-110">
+                      <I className="h-6 w-6 sm:h-7 sm:w-7 text-[#d4af37]" />
                     </div>
-                    <span
-                      className={`block font-sans text-xs sm:text-sm font-medium leading-snug transition-colors ${r ? "text-[#d4af37]" : "text-[#f4efe6] group-hover:text-[#d4af37]"}`}
-                    >
-                      {e.label}
-                    </span>
-                    <span className="hidden sm:block font-sans text-xs font-light text-[#a39c93] leading-relaxed mt-1.5">
-                      {e.detail}
-                    </span>
+                    <div className="min-w-0">
+                      <span
+                        className={`block font-sans text-xs sm:text-sm font-medium leading-snug transition-colors ${r ? "text-[#d4af37]" : "text-[#f4efe6] group-hover:text-[#d4af37]"}`}
+                      >
+                        {e.label}
+                      </span>
+                      <span className="hidden sm:block font-sans text-xs font-light text-[#a39c93] leading-relaxed mt-1">
+                        {e.detail}
+                      </span>
+                    </div>
                   </div>
                   <div className="absolute bottom-0 left-0 h-px w-0 bg-[#d4af37] transition-all duration-500 group-hover:w-full" />
                 </>
@@ -134,7 +134,7 @@ function Amenities() {
                 {r ? (
                   <Link
                     href="/party-room"
-                    className="group relative flex h-full flex-col justify-between border-b border-r border-[rgba(212,175,55,0.45)] p-3.5 sm:p-5 transition-all duration-300 overflow-hidden bg-[#131018] shadow-[0_0_25px_rgba(212,175,55,0.18)] hover:border-[#d4af37] hover:shadow-[0_0_35px_rgba(212,175,55,0.35)] cursor-pointer"
+                    className="group relative flex h-full flex-col justify-center border-b border-r border-[rgba(212,175,55,0.45)] p-3.5 sm:px-5 sm:py-4 transition-all duration-300 overflow-hidden bg-[#131018] shadow-[0_0_25px_rgba(212,175,55,0.18)] hover:border-[#d4af37] hover:shadow-[0_0_35px_rgba(212,175,55,0.35)] cursor-pointer"
                   >
                     <div className="pointer-events-none absolute inset-0 z-0 overflow-hidden">
                       <span
@@ -177,7 +177,7 @@ function Amenities() {
                     {l}
                   </Link>
                 ) : (
-                  <div className="group relative flex h-full flex-col justify-between border-b border-r border-[rgba(212,175,55,0.15)] p-3.5 sm:p-5 transition-colors duration-300 overflow-hidden bg-[#0c0a0f] hover:bg-[#131017]">
+                  <div className="group relative flex h-full flex-col justify-center border-b border-r border-[rgba(212,175,55,0.15)] p-3.5 sm:px-5 sm:py-4 transition-colors duration-300 overflow-hidden bg-[#0c0a0f] hover:bg-[#131017]">
                     {l}
                   </div>
                 )}

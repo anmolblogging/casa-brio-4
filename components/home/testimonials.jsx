@@ -268,10 +268,27 @@ function D({ review: e }) {
         </p>
       </div>
       <div className="mt-8 border-t border-[rgba(212,175,55,0.15)] pt-5">
-        <div className="mb-2.5 h-px w-6 bg-[#d4af37] transition-all duration-500 group-hover:w-12" />
-        <h3 className="font-serif text-base font-normal tracking-tight text-[#f4efe6] group-hover:text-[#d4af37] transition-colors">
-          {e.author}
-        </h3>
+        <div className="flex items-center gap-3">
+          <span
+            aria-hidden="true"
+            className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-[#d4af37]/40 bg-[#1b1720] font-sans text-sm font-semibold text-[#d4af37]"
+          >
+            {e.author
+              .split(/\s+/)
+              .map((w) => w[0])
+              .slice(0, 2)
+              .join("")
+              .toUpperCase()}
+          </span>
+          <div>
+            <h3 className="font-serif text-base font-normal tracking-tight text-[#f4efe6] group-hover:text-[#d4af37] transition-colors">
+              {e.author}
+            </h3>
+            <span className="block font-sans text-[11px] tracking-wide text-[#a39c93]">
+              Google review
+            </span>
+          </div>
+        </div>
       </div>
     </article>
   );

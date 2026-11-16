@@ -21,7 +21,7 @@ let m = [
       "A full lunch cooked by your private chef",
       "Help with your bags and a quick tour of your room",
     ],
-    image: "/images/home/living-2.jpg",
+    image: "/images/home/living-1.jpg",
     accentColor: "rgba(234, 179, 8, 0.12)",
     badgeIcon: o,
     badgeText: "CHECK-IN",

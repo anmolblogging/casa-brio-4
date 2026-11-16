@@ -8,7 +8,10 @@ import { ChevronLeft, ChevronRight, X } from "lucide-react";
 // Shows the whole photo, uncropped, with nothing behind it.
 // Loads the high-quality copy from /images/full.
 export const FramePhoto = function ({ src: e, alt: t }) {
-  let n = `/images/full/${e.split("/").pop().replace(/\.\w+$/, "")}.jpg`;
+  // Photos in /images/home are already high quality, so use them directly.
+  let n = e.startsWith("/images/home/")
+    ? e
+    : `/images/full/${e.split("/").pop().replace(/\.\w+$/, "")}.jpg`;
   return (
     <>
       <Image
