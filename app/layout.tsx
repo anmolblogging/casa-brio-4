@@ -19,7 +19,7 @@ const jakarta = Plus_Jakarta_Sans({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://casa-brio-rose.vercel.app"),
+  metadataBase: new URL("https://casa-brio-lonavala.vercel.app"),
   title: "Casa Brio | Private Villa in Lonavala | Pool, Turf & Party Room",
   description:
     "Casa Brio is a private villa in Lonavala, booked by one group at a time. It has a private swimming pool, a cricket turf with floodlights, and a party room with a snooker table.",
