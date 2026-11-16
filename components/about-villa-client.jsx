@@ -21,6 +21,7 @@ import {
   TablewareIcon,
 } from "@/components/icons";
 import { useEffect, useRef, useState } from "react";
+import Link from "next/link";
 import { motion, useScroll, useSpring, useTransform } from "framer-motion";
 import { Reveal } from "@/components/reveal";
 import { SiteHeader } from "@/components/site-header";
@@ -215,7 +216,7 @@ function B() {
             <div className="inline-flex items-center justify-center gap-3 mb-3">
               <span className="h-px w-6 bg-[#d4af37]" />
               <span className="eyebrow text-xs uppercase tracking-[0.28em] font-semibold text-[#d4af37]">
-                PHOTOS
+                TAKE A TOUR
               </span>
               <span className="h-px w-6 bg-[#d4af37]" />
             </div>
@@ -234,8 +235,10 @@ function B() {
             className="flex gap-4 sm:gap-6 will-change-transform"
           >
             {x.map((e, t) => (
-              <div
-                className="group relative shrink-0 w-[285px] sm:w-[345px] md:w-[405px] lg:w-[450px] h-[190px] sm:h-[230px] md:h-[270px] lg:h-[300px] overflow-hidden rounded-none border border-[rgba(212,175,55,0.22)] bg-[#121015] shadow-[0_15px_35px_rgba(0,0,0,0.85)] transition-colors duration-500 hover:border-[rgba(212,175,55,0.6)]"
+              <Link
+                href="/gallery"
+                aria-label={`${e.alt}: see all photos in the gallery`}
+                className="group relative block shrink-0 w-[285px] sm:w-[345px] md:w-[405px] lg:w-[450px] h-[190px] sm:h-[230px] md:h-[270px] lg:h-[300px] overflow-hidden rounded-none border border-[rgba(212,175,55,0.22)] bg-[#121015] shadow-[0_15px_35px_rgba(0,0,0,0.85)] transition-colors duration-500 hover:border-[rgba(212,175,55,0.6)]"
                 key={`top-${t}`}
               >
                 <img
@@ -245,7 +248,10 @@ function B() {
                   loading="lazy"
                 />
                 <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-[#08080a]/50 via-transparent to-transparent opacity-75 transition-opacity duration-300 group-hover:opacity-30" />
-              </div>
+                <span className="pointer-events-none absolute bottom-3 left-3 inline-flex items-center gap-1.5 border border-[#d4af37]/40 bg-[#08080a]/80 px-3 py-1.5 text-[11px] font-semibold uppercase tracking-[0.18em] text-[#d4af37] opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                  View Gallery <ArrowRight className="h-3.5 w-3.5" />
+                </span>
+              </Link>
             ))}
           </motion.div>
           <motion.div
@@ -255,8 +261,10 @@ function B() {
             className="flex gap-4 sm:gap-6 will-change-transform"
           >
             {f.map((e, t) => (
-              <div
-                className="group relative shrink-0 w-[285px] sm:w-[345px] md:w-[405px] lg:w-[450px] h-[190px] sm:h-[230px] md:h-[270px] lg:h-[300px] overflow-hidden rounded-none border border-[rgba(212,175,55,0.22)] bg-[#121015] shadow-[0_15px_35px_rgba(0,0,0,0.85)] transition-colors duration-500 hover:border-[rgba(212,175,55,0.6)]"
+              <Link
+                href="/gallery"
+                aria-label={`${e.alt}: see all photos in the gallery`}
+                className="group relative block shrink-0 w-[285px] sm:w-[345px] md:w-[405px] lg:w-[450px] h-[190px] sm:h-[230px] md:h-[270px] lg:h-[300px] overflow-hidden rounded-none border border-[rgba(212,175,55,0.22)] bg-[#121015] shadow-[0_15px_35px_rgba(0,0,0,0.85)] transition-colors duration-500 hover:border-[rgba(212,175,55,0.6)]"
                 key={`bottom-${t}`}
               >
                 <img
@@ -266,9 +274,21 @@ function B() {
                   loading="lazy"
                 />
                 <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-[#08080a]/50 via-transparent to-transparent opacity-75 transition-opacity duration-300 group-hover:opacity-30" />
-              </div>
+                <span className="pointer-events-none absolute bottom-3 left-3 inline-flex items-center gap-1.5 border border-[#d4af37]/40 bg-[#08080a]/80 px-3 py-1.5 text-[11px] font-semibold uppercase tracking-[0.18em] text-[#d4af37] opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                  View Gallery <ArrowRight className="h-3.5 w-3.5" />
+                </span>
+              </Link>
             ))}
           </motion.div>
+        </div>
+        <div className="mt-10 flex justify-center">
+          <Link
+            href="/gallery"
+            className="group inline-flex items-center gap-3 border border-[#d4af37] px-8 py-3.5 text-xs font-semibold uppercase tracking-[0.18em] text-[#d4af37] transition-all duration-300 hover:bg-[#d4af37] hover:text-[#08080a]"
+          >
+            <span>See All Photos</span>
+            <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
+          </Link>
         </div>
       </div>
     </section>
