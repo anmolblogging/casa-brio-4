@@ -57,7 +57,7 @@ let u = [
     },
     {
       icon: GuestsGroupIcon,
-      title: "Up to 25 Guests",
+      title: "Up to 15 Guests",
       desc: "Only one group stays at a time",
     },
     {
@@ -353,7 +353,7 @@ function AboutVillaClient() {
                     </div>
                     <div className="flex flex-col text-left">
                       <span className="font-serif text-3xl sm:text-4xl font-normal text-[#d4af37] leading-none">
-                        25
+                        15
                       </span>
                       <span className="mt-1.5 font-sans text-xs uppercase tracking-[0.24em] font-semibold text-[#a39c93] group-hover:text-[#f4efe6] transition-colors">
                         MAX GUESTS
@@ -453,7 +453,7 @@ function AboutVillaClient() {
                     },
                     {
                       icon: GuestsGroupIcon,
-                      title: "Up to 25 Guests",
+                      title: "Up to 15 Guests",
                       desc: "Up to 8 extra mattresses available",
                     },
                   ].map((e) => {

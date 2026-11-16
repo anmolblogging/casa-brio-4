@@ -1,13 +1,12 @@
 "use client";
 
-import { ArrowUpRight, Check, CircleCheck, Mail, MapPin, MessageSquare, Phone } from "lucide-react";
+import { ArrowUpRight, CircleCheck, Mail, MapPin, MessageSquare, Phone } from "lucide-react";
 import { useState } from "react";
 import { SiteHeader } from "@/components/site-header";
 import { Reveal } from "@/components/reveal";
 import { motion } from "framer-motion";
 import { Footer } from "@/components/footer";
 import { whatsappUrl } from "@/components/whatsapp";
-let I = Check;
 let C = CircleCheck;
 let M = MessageSquare;
 let U = ArrowUpRight;
@@ -19,9 +18,8 @@ function ContactClient() {
       email: "",
       checkIn: "",
       checkOut: "",
-      guests: "12 Guests",
+      guests: "11 - 15 Guests",
       occasion: "Private Getaway",
-      addons: [],
       notes: "",
     }),
     [l, n] = useState(!1),
@@ -31,8 +29,7 @@ I would like to book the villa:
 - Name: ${e.name || "[Guest Name]"}
 - Dates: ${e.checkIn || "TBD"} to ${e.checkOut || "TBD"}
 - Guests: ${e.guests}
-- Occasion: ${e.occasion}
-- Extras: ${e.addons.join(", ") || "None specified"}${e.notes ? `
+- Occasion: ${e.occasion}${e.notes ? `
 - Notes: ${e.notes}` : ""}`),
     p =
       "mt-2 h-12 w-full border border-[rgba(212,175,55,0.2)] bg-[#121015] px-4 text-sm font-sans font-light text-[#f4efe6] outline-none transition-all placeholder:text-[#a39c93] focus:border-[#d4af37]",
@@ -233,9 +230,8 @@ I would like to book the villa:
                               className={p}
                             >
                               <option value="Up to 6 Guests">Up to 6 Guests</option>
-                              <option value="8 - 12 Guests">8 - 12 Guests</option>
-                              <option value="12 - 16 Guests">12 - 16 Guests</option>
-                              <option value="16 - 20 Guests">16 - 20 Guests</option>
+                              <option value="7 - 10 Guests">7 - 10 Guests</option>
+                              <option value="11 - 15 Guests">11 - 15 Guests</option>
                             </select>
                           </div>
                           <div>
@@ -259,47 +255,6 @@ I would like to book the villa:
                               <option value="Family Gathering">Family Gathering</option>
                             </select>
                           </div>
-                        </div>
-                      </div>
-                      <div className="border-t border-white/8 pt-8">
-                        <p className="mb-5 text-[11px] uppercase tracking-[0.22em] text-neutral-500">
-                          Extras (Optional)
-                        </p>
-                        <div className="grid gap-x-8 gap-y-4 sm:grid-cols-2">
-                          {[
-                            "BBQ & Meals",
-                            "Bartender for the Party Room",
-                            "Cricket Match Setup",
-                            "Car Pickup from Mumbai/Pune",
-                          ].map((t) => {
-                            let s = e.addons.includes(t);
-                            return (
-                              <button
-                                type="button"
-                                onClick={() => {
-                                  r((e) => ({
-                                    ...e,
-                                    addons: e.addons.includes(t)
-                                      ? e.addons.filter((e) => e !== t)
-                                      : [...e.addons, t],
-                                  }));
-                                }}
-                                className="group flex items-center gap-3 py-2 text-left"
-                                key={t}
-                              >
-                                <span
-                                  className={`flex h-4 w-4 shrink-0 items-center justify-center border transition-all ${s ? "border-[#b99a55] bg-[#b99a55] text-black" : "border-white/25 group-hover:border-[#b99a55]"}`}
-                                >
-                                  {s && <I className="h-3 w-3" />}
-                                </span>
-                                <span
-                                  className={`text-sm transition-colors ${s ? "text-white" : "text-neutral-400 group-hover:text-neutral-200"}`}
-                                >
-                                  {t}
-                                </span>
-                              </button>
-                            );
-                          })}
                         </div>
                       </div>
                       <div className="border-t border-white/8 pt-8">

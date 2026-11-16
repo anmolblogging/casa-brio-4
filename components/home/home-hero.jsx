@@ -8,43 +8,33 @@ import { whatsappUrl } from "@/components/whatsapp";
 import { ArrowRight, ShieldCheck, Trophy, Waves, Wine } from "lucide-react";
 let d = [
     {
-      src: "/images/bungalow/master-suite-view.jpg",
-      alt: "Casa Brio master suite with panoramic mountain views",
+      src: "/images/home/hero-exterior.jpg",
+      alt: "Casa Brio villa lit up at sunset with the hills behind",
       position: "object-center",
     },
     {
-      src: "/images/bungalow/pool-night-pergola.jpg",
-      alt: "Private sapphire pool at night with pergola lighting",
+      src: "/images/home/hero-pool.jpg",
+      alt: "Casa Brio private swimming pool",
       position: "object-center",
     },
     {
-      src: "/images/bungalow/bedroom-suite-2.jpg",
-      alt: "Luxury master bedroom suite with valley views and hanging chair",
+      src: "/images/home/hero-living.jpg",
+      alt: "Bright living room with large sofas",
       position: "object-center",
     },
     {
-      src: "/images/bungalow/estate-balcony-view.jpg",
-      alt: "Private balcony seating with panoramic Lonavala valley views",
+      src: "/images/home/hero-bedroom.jpg",
+      alt: "Bedroom opening onto a balcony with hill views",
       position: "object-center",
     },
     {
-      src: "/images/bungalow/bedroom-suite-3.jpg",
-      alt: "Luxury bedroom suite with wooden slat feature wall",
+      src: "/images/home/hero-party.jpg",
+      alt: "Party room with snooker table, leather sofas and bar",
       position: "object-center",
     },
     {
-      src: "/images/bungalow/speakeasy-snooker-neon.png",
-      alt: "Party room with snooker table",
-      position: "object-center",
-    },
-    {
-      src: "/images/bungalow/interior-portrait-1.jpg",
-      alt: "Premium interior suite portrait",
-      position: "object-center",
-    },
-    {
-      src: "/images/bungalow/pool-day-pergola.jpg",
-      alt: "Casa Brio private pool and wooden pergola daytime",
+      src: "/images/home/hero-terrace.jpg",
+      alt: "Terrace at sunrise over the Sahyadri hills",
       position: "object-center",
     },
   ],
