@@ -85,7 +85,7 @@ function V_() {
             </span>
             <span className="h-px w-6 bg-[#d4af37]" />
           </div>
-          <h2 className="font-serif text-4xl sm:text-5xl font-normal leading-[1.05] tracking-tight text-[#f4efe6]">
+          <h2 className="font-serif text-3xl sm:text-5xl lg:text-6xl font-normal leading-[1.05] tracking-tight text-[#f4efe6]">
             Happy <span className="text-[#d4af37] font-normal">Guests</span>
           </h2>
         </div>
@@ -536,7 +536,7 @@ function PartyRoomClient() {
                 </span>
                 <span className="h-px w-10 sm:w-16 bg-[#d4af37]" />
               </div>
-              <h1 className="font-serif text-[3.2rem] sm:text-[5.5rem] md:text-[7rem] lg:text-[7.8rem] font-normal leading-[1.05] tracking-tight text-[#f4efe6] drop-shadow-2xl">
+              <h1 className="font-serif text-4xl sm:text-6xl md:text-7xl lg:text-[5.2rem] font-normal leading-[1.12] tracking-tight text-[#f4efe6] drop-shadow-2xl">
                 Your Own Party Room.
                 <br />
                 <span className="text-[#d4af37] font-normal">Just for Your Group.</span>
@@ -576,7 +576,7 @@ function PartyRoomClient() {
                     FULLY PRIVATE
                   </span>
                 </div>
-                <h2 className="font-serif text-3xl sm:text-5xl font-normal leading-tight text-[#fdfbf7]">
+                <h2 className="font-serif text-3xl sm:text-5xl lg:text-6xl font-normal leading-tight text-[#fdfbf7]">
                   {"No Time Limits. "}
                   <br />
                   <span className="text-[#d4af37] font-normal">No Disturbance.</span>
@@ -649,7 +649,7 @@ function PartyRoomClient() {
                 </span>
                 <span className="h-px w-8 bg-[#d4af37]" />
               </div>
-              <h2 className="font-serif text-3xl sm:text-5xl md:text-6xl font-normal text-[#f4efe6] tracking-tight">
+              <h2 className="font-serif text-3xl sm:text-5xl lg:text-6xl font-normal text-[#f4efe6] tracking-tight">
                 {"Where to "}
                 <span className="text-[#d4af37] font-normal">Next?</span>
               </h2>

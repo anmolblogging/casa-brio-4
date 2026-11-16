@@ -90,7 +90,7 @@ export const GalleryClient = function () {
                     </div>
                   </Reveal>
                   <Reveal delay={0.1}>
-                    <h1 className="font-serif text-3xl sm:text-5xl lg:text-6xl font-normal text-[#f4efe6]">
+                    <h1 className="font-serif text-4xl sm:text-6xl md:text-7xl lg:text-[5.2rem] font-normal leading-[1.12] text-[#f4efe6]">
                       Take a Look <span className="text-[#d4af37] font-normal">Around</span>
                     </h1>
                   </Reveal>
@@ -271,7 +271,7 @@ export const GalleryClient = function () {
                   </span>
                   <span className="h-px w-6 bg-[#d4af37]" />
                 </div>
-                <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-normal text-[#f4efe6] leading-[1.2]">
+                <h2 className="font-serif text-3xl sm:text-5xl lg:text-6xl font-normal text-[#f4efe6] leading-[1.2]">
                   Want to see the villa in person?
                 </h2>
                 <p className="mt-4 font-sans text-sm sm:text-base font-light text-[#e6dfd5]/80 leading-relaxed max-w-xl mx-auto mb-8">

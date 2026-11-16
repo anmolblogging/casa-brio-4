@@ -12,7 +12,7 @@ import {
   DiscoLightsIcon,
   GamesLoungeIcon,
   GuestsGroupIcon,
-  InfinityIcon,
+  SingleGroupBuyoutIcon,
   ItalianWashroomIcon,
   JacuzziIcon,
   KitchenEquippedIcon,
@@ -232,7 +232,7 @@ function B() {
               </span>
               <span className="h-px w-6 bg-[#d4af37]" />
             </div>
-            <h2 className="font-serif text-3xl sm:text-5xl font-normal text-[#f4efe6]">
+            <h2 className="font-serif text-3xl sm:text-5xl lg:text-6xl font-normal text-[#f4efe6]">
               A Look Around the Villa
             </h2>
           </div>
@@ -316,7 +316,7 @@ function AboutVillaClient() {
               </span>
               <span className="h-px w-8 bg-[#d4af37]" />
             </div>
-            <h1 className="font-serif text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-normal tracking-[0.12em] text-[#fcf8f0] uppercase drop-shadow-[0_4px_30px_rgba(0,0,0,0.8)]">
+            <h1 className="font-serif text-4xl sm:text-6xl md:text-7xl lg:text-[5.2rem] font-normal tracking-[0.12em] text-[#fcf8f0] uppercase drop-shadow-[0_4px_30px_rgba(0,0,0,0.8)]">
               CASA BRIO
             </h1>
           </Reveal>
@@ -375,14 +375,14 @@ function AboutVillaClient() {
                   </div>
                   <div className="flex items-center gap-4 sm:gap-5 px-4 sm:px-6 py-4 sm:py-2 group">
                     <div className="text-[#d4af37] transition-transform duration-300 group-hover:scale-110">
-                      <InfinityIcon className="h-8 w-8 text-[#d4af37]" />
+                      <SingleGroupBuyoutIcon className="h-8 w-8 text-[#d4af37]" />
                     </div>
                     <div className="flex flex-col text-left">
                       <span className="font-serif text-3xl sm:text-4xl font-normal text-[#f4efe6] group-hover:text-[#d4af37] transition-colors leading-none">
-                        ∞
+                        1
                       </span>
                       <span className="mt-1.5 font-sans text-xs uppercase tracking-[0.24em] font-semibold text-[#a39c93] group-hover:text-[#f4efe6] transition-colors">
-                        MEMORIES
+                        GROUP AT A TIME
                       </span>
                     </div>
                   </div>
@@ -439,7 +439,7 @@ function AboutVillaClient() {
                     THE VILLA
                   </span>
                 </div>
-                <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-normal leading-[1.2] text-[#f4efe6] mb-5">
+                <h2 className="font-serif text-3xl sm:text-5xl lg:text-6xl font-normal leading-[1.2] text-[#f4efe6] mb-5">
                   Lots of Space to{" "}
                   <span className="text-[#d4af37]">Relax and Celebrate.</span>
                 </h2>
@@ -497,6 +497,8 @@ function AboutVillaClient() {
         </div>
       </section>
       <SectionDivider />
+      <B />
+      <SectionDivider />
       <section className="relative py-16 sm:py-20 bg-[#0c0a0f]">
         <div className="mx-auto w-full max-w-7xl px-6 sm:px-8 lg:px-12">
           <Reveal>
@@ -509,7 +511,7 @@ function AboutVillaClient() {
                   </span>
                   <span className="h-px w-6 bg-[#d4af37]" />
                 </div>
-                <h2 className="font-serif text-3xl sm:text-5xl font-normal text-[#f4efe6]">
+                <h2 className="font-serif text-3xl sm:text-5xl lg:text-6xl font-normal text-[#f4efe6]">
                   Everything at the Villa
                 </h2>
               </div>
@@ -555,7 +557,7 @@ function AboutVillaClient() {
                 </span>
                 <span className="h-px w-6 bg-[#d4af37]" />
               </div>
-              <h2 className="font-serif text-3xl sm:text-5xl font-normal text-[#f4efe6]">
+              <h2 className="font-serif text-3xl sm:text-5xl lg:text-6xl font-normal text-[#f4efe6]">
                 Our Prices
               </h2>
             </div>
@@ -980,8 +982,6 @@ function AboutVillaClient() {
           </div>
         </div>
       </section>
-      <SectionDivider />
-      <B />
       <SectionDivider />
       <Footer />
     </div>

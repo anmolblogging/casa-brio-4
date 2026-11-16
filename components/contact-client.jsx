@@ -64,7 +64,7 @@ I would like to book the villa:
               </div>
             </Reveal>
             <Reveal delay={0.08}>
-              <h1 className="font-serif text-3xl sm:text-5xl lg:text-6xl font-normal leading-[1.12] tracking-tight text-[#f4efe6]">
+              <h1 className="font-serif text-4xl sm:text-6xl md:text-7xl lg:text-[5.2rem] font-normal leading-[1.12] tracking-tight text-[#f4efe6]">
                 Book the Whole Villa.
               </h1>
             </Reveal>
