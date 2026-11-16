@@ -12,40 +12,32 @@ import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 let r = [
     {
-      src: "/images/bungalow/speakeasy-snooker-neon.png",
-      alt: "Party room with neon lights",
+      src: "/images/home/party-46.jpg",
+      alt: "Party room with snooker table, leather sofas and bar",
+      wide: !0,
     },
     {
-      src: "/images/bungalow/snooker-bar-lounge.jpg",
-      alt: "Party room snooker table and bar",
+      src: "/images/home/party-52.jpg",
+      alt: "Bar stools beside the snooker table",
     },
     {
-      src: "/images/bungalow/bar-ambiance-warm.png",
-      alt: "Party room bar",
+      src: "/images/home/party-43.jpg",
+      alt: "Snooker table with a view of the floodlit turf",
+      wide: !0,
     },
     {
-      src: "/images/bungalow/billiards-leather-lounge.png",
-      alt: "Leather sofas in the party room",
+      src: "/images/home/party-50.jpg",
+      alt: "Leather Chesterfield sofas and the gold-lit bar",
+      wide: !0,
     },
     {
-      src: "/images/bungalow/bar-counter-snooker.png",
-      alt: "Party room bar counter",
+      src: "/images/home/party-54.jpg",
+      alt: "The private bar counter",
     },
     {
-      src: "/images/bungalow/living-lounge-party.jpg",
-      alt: "Guests partying in the living room",
-    },
-    {
-      src: "/images/bungalow/party-lounge-detail.jpg",
-      alt: "Party room seating",
-    },
-    {
-      src: "/images/bungalow/snooker-corner-cue.png",
-      alt: "Snooker cues in the party room",
-    },
-    {
-      src: "/images/bungalow/suite-evening-cocktails.png",
-      alt: "Evening drinks on the balcony",
+      src: "/images/home/party-45.jpg",
+      alt: "Party room bar, lounge and snooker table",
+      wide: !0,
     },
   ],
   l = [
@@ -227,7 +219,7 @@ function PartyRoomSection() {
                 >
                   {[...r, ...r].map((e, t) => (
                     <div
-                      className="relative shrink-0 w-[280px] sm:w-[320px] h-full overflow-hidden border border-[rgba(212,175,55,0.18)] bg-[#121015]"
+                      className={`relative shrink-0 ${e.wide ? "w-[510px] sm:w-[600px]" : "w-[227px] sm:w-[267px]"} h-full overflow-hidden border border-[rgba(212,175,55,0.18)] bg-[#121015]`}
                       key={t}
                     >
                       <img

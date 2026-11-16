@@ -21,7 +21,7 @@ let m = [
       "A full lunch cooked by your private chef",
       "Help with your bags and a quick tour of your room",
     ],
-    image: "/images/bungalow/living-dining-view.jpg",
+    image: "/images/home/living-2.jpg",
     accentColor: "rgba(234, 179, 8, 0.12)",
     badgeIcon: o,
     badgeText: "CHECK-IN",
@@ -40,7 +40,7 @@ let m = [
       "A swim in the pool, with sunbeds on the deck",
       "Evening tea and snacks by the pool",
     ],
-    image: "/images/bungalow/cricket-turf-day.png",
+    images: ["/images/home/turf-play-vertical.jpg", "/images/home/pool-jump-vertical.jpg"],
     accentColor: "rgba(56, 189, 248, 0.10)",
     badgeIcon: o,
     badgeText: "AFTERNOON FUN",
@@ -59,7 +59,7 @@ let m = [
       "Live barbecue and a private bar",
       "Strong sound system with no time limit",
     ],
-    image: "/images/bungalow/speakeasy-snooker-neon.png",
+    image: "/images/home/party-46.jpg",
     accentColor: "rgba(168, 85, 247, 0.14)",
     badgeIcon: r,
     badgeText: "PARTY NIGHT",
@@ -78,7 +78,7 @@ let m = [
       "Fresh coffee and a hot breakfast",
       "Breakfast served on the open terrace",
     ],
-    image: "/images/bungalow/master-suite-view.jpg",
+    image: "/images/home/terrace-sunrise.jpg",
     accentColor: "rgba(217, 119, 6, 0.14)",
     badgeIcon: o,
     badgeText: "BREAKFAST",
@@ -97,7 +97,7 @@ let m = [
       "Quick check-out, with help for your bags",
       "Snacks packed for your trip home",
     ],
-    image: "/images/bungalow/pool-day-pergola.jpg",
+    image: "/images/home/pool-day.jpg",
     accentColor: "rgba(59, 130, 246, 0.14)",
     badgeIcon: o,
     badgeText: "CHECK-OUT",
@@ -274,11 +274,24 @@ function Journey() {
                     className="absolute inset-0"
                     key={l.id}
                   >
-                    <img
-                      src={l.image}
-                      alt={l.title}
-                      className="h-full w-full object-cover object-center"
-                    />
+                    {l.images ? (
+                      <div className="grid h-full w-full grid-cols-2 gap-1">
+                        {l.images.map((src) => (
+                          <img
+                            src={src}
+                            alt={l.title}
+                            className="h-full w-full object-cover object-center"
+                            key={src}
+                          />
+                        ))}
+                      </div>
+                    ) : (
+                      <img
+                        src={l.image}
+                        alt={l.title}
+                        className="h-full w-full object-cover object-center"
+                      />
+                    )}
                     <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
                   </motion.div>
                 </AnimatePresence>

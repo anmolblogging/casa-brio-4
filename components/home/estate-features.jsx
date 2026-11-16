@@ -7,168 +7,162 @@ import { Lightbox } from "@/components/lightbox";
 import { ArrowRight, ChevronRight } from "lucide-react";
 let c = [
   {
-    title: "Party Room & Bar",
-    category: "GAMES & FUN",
-    description:
-      "A private party room with a full-size snooker table, leather sofas and a strong sound system.",
-    images: [
+    "title": "Party Room & Bar",
+    "category": "GAMES & FUN",
+    "description": "A private party room with a full-size snooker table, leather sofas, a bar and a strong sound system.",
+    "images": [
       {
-        src: "/images/bungalow/billiards-leather-lounge.png",
-        caption: "Full-size snooker table with cue racks and leather sofas.",
-        alt: "Party room snooker table and leather sofas",
+        "src": "/images/home/party-50.jpg",
+        "caption": "Leather Chesterfield sofas in front of the gold-lit bar.",
+        "alt": "Party room leather sofas and bar"
       },
       {
-        src: "/images/bungalow/speakeasy-snooker-neon.png",
-        caption: "Neon lights and a fun party feel.",
-        alt: "Party room neon lights",
+        "src": "/images/home/party-46.jpg",
+        "caption": "Full-size snooker table, with the bar and lounge right behind it.",
+        "alt": "Party room snooker table and lounge"
       },
       {
-        src: "/images/bungalow/bar-counter-snooker.png",
-        caption: "Private bar with glassware and backlit shelves.",
-        alt: "Party room private bar",
+        "src": "/images/home/party-43.jpg",
+        "caption": "Play snooker while looking out at the floodlit turf.",
+        "alt": "Snooker table with a view of the turf"
       },
       {
-        src: "/images/bungalow/snooker-bar-lounge.jpg",
-        caption: "The full party room with foosball, snooker and seating.",
-        alt: "Full view of the party room",
-      },
-    ],
+        "src": "/images/home/party-54.jpg",
+        "caption": "Your own private bar counter.",
+        "alt": "Party room bar counter"
+      }
+    ]
   },
   {
-    title: "Swimming Pool & Deck",
-    category: "PRIVATE POOL",
-    description:
-      "A clear blue pool with a lit-up wooden deck, sunbeds and space to eat by the pool.",
-    images: [
+    "title": "Swimming Pool & Deck",
+    "category": "PRIVATE POOL",
+    "description": "A private pool with steps, grass all around and space to eat and drink by the water.",
+    "images": [
       {
-        src: "/images/bungalow/pool-day-pergola.jpg",
-        caption: "The pool in daylight, with a wooden deck and sunbeds.",
-        alt: "Pool and wooden pergola during the day",
+        "src": "/images/home/pool-day.jpg",
+        "caption": "The private pool on a sunny afternoon.",
+        "alt": "Casa Brio private swimming pool"
       },
       {
-        src: "/images/bungalow/pool-night-pergola.jpg",
-        caption: "The pool at night with warm lights.",
-        alt: "Pool night view with pergola lights",
+        "src": "/images/home/pool-jump.jpg",
+        "caption": "Jump in, splash around. It's only your group here.",
+        "alt": "Guests jumping into the pool"
       },
       {
-        src: "/images/bungalow/pool-party-celebration.png",
-        caption: "An evening pool party with lights and a barbecue.",
-        alt: "Pool celebration evening view",
+        "src": "/images/home/pool-snacks.jpg",
+        "caption": "Snacks and cold drinks served right by the pool.",
+        "alt": "Snacks and drinks by the pool"
       },
       {
-        src: "/images/bungalow/garden-lounge.jpg",
-        caption: "Garden deck with plants and quiet seating.",
-        alt: "Garden lounge by the poolside",
-      },
-    ],
+        "src": "/images/home/pool-ball.jpg",
+        "caption": "Pool games for all ages.",
+        "alt": "Guest playing with a ball in the pool"
+      }
+    ]
   },
   {
-    title: "Box Cricket Turf",
-    category: "PRIVATE SPORTS",
-    description:
-      "A fully netted cricket turf inside the villa. Play in the day, or at night under floodlights.",
-    images: [
+    "title": "Box Cricket Turf",
+    "category": "PRIVATE SPORTS",
+    "description": "A fully netted cricket turf inside the villa. Play in the day, or at night under floodlights.",
+    "images": [
       {
-        src: "/images/bungalow/cricket-turf-day.png",
-        caption: "All-weather turf with safety nets all around.",
-        alt: "Box cricket turf in daytime",
+        "src": "/images/home/turf-day.jpg",
+        "caption": "A full-length netted pitch with real stumps.",
+        "alt": "Box cricket turf in daylight"
       },
       {
-        src: "/images/bungalow/turf-play-night.jpg",
-        caption: "A night match under bright floodlights.",
-        alt: "Box cricket night match with floodlights",
+        "src": "/images/home/turf-night.jpg",
+        "caption": "Floodlights for cricket matches after dark.",
+        "alt": "Box cricket turf under floodlights"
       },
       {
-        src: "/images/bungalow/turf-angle-2.png",
-        caption: "Netted on all sides, with a proper pitch size.",
-        alt: "Cricket turf pitch angle",
+        "src": "/images/home/turf-side.jpg",
+        "caption": "The turf sits right next to the kids' play area.",
+        "alt": "Cricket turf next to the play area"
       },
       {
-        src: "/images/bungalow/turf-angle-3.png",
-        caption: "Space for many sports, with a kids' play area next to it.",
-        alt: "Turf multi-sport play area",
-      },
-    ],
+        "src": "/images/home/turf-night-2.jpg",
+        "caption": "Night match, ready to go.",
+        "alt": "Cricket turf at night"
+      }
+    ]
   },
   {
-    title: "Bedrooms with a View",
-    category: "MOUNTAIN VIEWS",
-    description:
-      "6 large bedrooms with big glass windows that look out at the misty Sahyadri hills.",
-    images: [
+    "title": "Living Room",
+    "category": "RELAX TOGETHER",
+    "description": "A big, bright living room with large sofas, a TV and glass doors, made for the whole group.",
+    "images": [
       {
-        src: "/images/bungalow/master-suite-view.jpg",
-        caption: "Main bedroom with a king bed and big windows facing the mountains.",
-        alt: "Master bedroom with mountain views",
+        "src": "/images/home/living-2.jpg",
+        "caption": "Big sofas with room for the whole group.",
+        "alt": "Casa Brio living room sofas"
       },
       {
-        src: "/images/bungalow/bedroom-suite-2.jpg",
-        caption: "Bedroom with soft bedding and AC.",
-        alt: "Executive bedroom suite",
+        "src": "/images/home/living-1.jpg",
+        "caption": "TV, music and plenty of seating.",
+        "alt": "Living room with TV and sofas"
       },
       {
-        src: "/images/bungalow/bedroom-suite-3.jpg",
-        caption: "Cosy guest room with warm lamps and wooden finish.",
-        alt: "Guest bedroom suite 3",
-      },
-      {
-        src: "/images/bungalow/suite-evening-cocktails.png",
-        caption: "Private balcony to enjoy the sunset with a drink.",
-        alt: "Suite balcony evening cocktail view",
-      },
-    ],
+        "src": "/images/home/living-3.jpg",
+        "caption": "Full-height glass doors and marble floors.",
+        "alt": "Living room with glass doors"
+      }
+    ]
   },
   {
-    title: "Living & Dining Room",
-    category: "LIVING SPACES",
-    description:
-      "A big living room for chatting, eating together and relaxing as a group.",
-    images: [
+    "title": "Bedrooms with a View",
+    "category": "6 MASTER SUITES",
+    "description": "Six master suites with king-size beds, attached bathrooms and views of the hills.",
+    "images": [
       {
-        src: "/images/bungalow/living-dining-view.jpg",
-        caption: "Large living room next to a 12-seater dining table.",
-        alt: "Living and dining hall view",
+        "src": "/images/home/bedroom-1.jpg",
+        "caption": "Master suite opening onto a balcony with hill views.",
+        "alt": "Master suite with balcony"
       },
       {
-        src: "/images/bungalow/living-lounge-party.jpg",
-        caption: "Big sofa with a 4K TV and surround sound.",
-        alt: "Living lounge party seating",
+        "src": "/images/home/bedroom-2.jpg",
+        "caption": "Bright suites with big windows and a lounge chair.",
+        "alt": "Master suite with large windows"
       },
       {
-        src: "/images/bungalow/party-lounge-detail.jpg",
-        caption: "Chandelier and soft ceiling lights.",
-        alt: "Living room architectural detail",
+        "src": "/images/home/bedroom-11.jpg",
+        "caption": "Cosy rooms with warm lights and fresh linen.",
+        "alt": "Bedroom with king-size bed"
       },
       {
-        src: "/images/bungalow/interior-portrait-1.jpg",
-        caption: "Cosy corners for morning coffee and late-night chats.",
-        alt: "Interior salon lounge seating",
-      },
-    ],
+        "src": "/images/home/bedroom-17.jpg",
+        "caption": "Balconies with a swing chair and open valley views.",
+        "alt": "Balcony with swing chair and valley view"
+      }
+    ]
   },
   {
-    title: "Modern Bathrooms",
-    category: "BATHROOMS",
-    description:
-      "Clean, attached bathrooms with a marble finish, rain showers and soft lighting.",
-    images: [
+    "title": "Kids Play Area",
+    "category": "FOR THE LITTLE ONES",
+    "description": "A colourful play area with slides, swings and a merry-go-round, right next to the turf.",
+    "images": [
       {
-        src: "/images/bungalow/designer-washroom.jpg",
-        caption: "Marble bathroom with a glass shower and a big rain shower.",
-        alt: "Designer Italian marble washroom",
+        "src": "/images/home/kids-33.jpg",
+        "caption": "Slides, climbing frames and soft flooring.",
+        "alt": "Kids play area with slides"
       },
       {
-        src: "/images/bungalow/interior-portrait-2.jpg",
-        caption: "Modern sink area with gold taps, lit mirrors and toiletries.",
-        alt: "Bespoke washroom vanity and mirror",
+        "src": "/images/home/kids-32.jpg",
+        "caption": "A merry-go-round and swings for younger kids.",
+        "alt": "Play area merry-go-round and slide"
       },
       {
-        src: "/images/bungalow/estate-balcony-view.jpg",
-        caption: "Balcony with fresh air, natural light and valley views.",
-        alt: "Balcony terrace mountain view",
+        "src": "/images/home/kids-34.jpg",
+        "caption": "Rocking rides and hopscotch on soft flooring.",
+        "alt": "Kids play area rocking rides"
       },
-    ],
-  },
+      {
+        "src": "/images/home/kids-38.jpg",
+        "caption": "Lit up in the evening, so the fun keeps going.",
+        "alt": "Kids play area at night"
+      }
+    ]
+  }
 ];
 function EstateFeatures() {
   let [e, s] = useState(null),
@@ -251,16 +245,19 @@ function X_({ item: e, featureIdx: s, onOpenModal: i, isMobile: l }) {
     m = e.images.length;
   useEffect(() => {
     if (m <= 1) return;
-    let e = setTimeout(
-      () => {
-        let e = setInterval(() => {
-          c((e) => (e + 1) % m);
-        }, 4200);
-        return () => clearInterval(e);
-      },
-      (s % 3) * 600,
-    );
-    return () => clearTimeout(e);
+    let iv,
+      e = setTimeout(
+        () => {
+          iv = setInterval(() => {
+            c((e) => (e + 1) % m);
+          }, 4200);
+        },
+        (s % 3) * 600,
+      );
+    return () => {
+      clearTimeout(e);
+      clearInterval(iv);
+    };
   }, [m, s]);
   let g = (
     <div

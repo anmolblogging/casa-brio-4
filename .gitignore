@@ -42,3 +42,6 @@ next-env.d.ts
 
 # Hostinger upload zip
 *.zip
+
+# Raw photo library from Google Drive (copy chosen photos into public/)
+/drive-assets/
