@@ -166,28 +166,57 @@ const villaSlides = [
   { src: "/images/home/kids-33.jpg", alt: "Kids play area" },
 ];
 function VillaSlideshow() {
-  let [i, setI] = useState(0);
+  let n = villaSlides.length,
+    [i, setI] = useState(0),
+    // Bumped on every manual change so the 2.5s auto-advance restarts from that photo.
+    [tick, setTick] = useState(0),
+    touchX = useRef(null),
+    go = (k) => {
+      setI(((k % n) + n) % n);
+      setTick((t) => t + 1);
+    };
   useEffect(() => {
-    let t = setInterval(() => setI((v) => (v + 1) % villaSlides.length), 2500);
+    let t = setInterval(() => setI((v) => (v + 1) % n), 2500);
     return () => clearInterval(t);
-  }, []);
+  }, [n, tick]);
   return (
-    <div className="relative aspect-[3/2] w-full overflow-hidden rounded-none border border-[rgba(212,175,55,0.22)] bg-[#121015] shadow-2xl">
+    <div
+      className="relative aspect-[3/2] w-full touch-pan-y select-none overflow-hidden rounded-none border border-[rgba(212,175,55,0.22)] bg-[#121015] shadow-2xl"
+      onTouchStart={(e) => {
+        touchX.current = e.touches[0].clientX;
+      }}
+      onTouchEnd={(e) => {
+        if (touchX.current === null) return;
+        let dx = e.changedTouches[0].clientX - touchX.current;
+        touchX.current = null;
+        // Swipe left = next photo, swipe right = previous photo.
+        if (Math.abs(dx) > 40) go(i + (dx < 0 ? 1 : -1));
+      }}
+    >
       {villaSlides.map((e, t) => (
         <img
           src={e.src}
           alt={e.alt}
+          draggable={!1}
           loading={t === 0 ? "eager" : "lazy"}
-          className={`absolute inset-0 h-full w-full object-cover object-center transition-opacity duration-1000 ease-in-out ${t === i ? "opacity-100" : "opacity-0"}`}
+          className={`absolute inset-0 h-full w-full object-cover object-center transition-opacity duration-700 ease-in-out ${t === i ? "opacity-100" : "opacity-0"}`}
           key={e.src}
         />
       ))}
-      <div className="absolute bottom-3 left-1/2 z-10 flex -translate-x-1/2 items-center gap-1.5 bg-black/45 px-2 py-1 backdrop-blur-sm">
+      <div className="absolute bottom-3 left-1/2 z-10 flex -translate-x-1/2 items-center gap-0.5 bg-black/50 px-1.5 backdrop-blur-sm">
         {villaSlides.map((e, t) => (
-          <span
-            className={`h-1 transition-all duration-500 ${t === i ? "w-4 bg-[#d4af37]" : "w-1.5 bg-white/40"}`}
+          <button
+            type="button"
+            onClick={() => go(t)}
+            aria-label={`Show photo ${t + 1}: ${e.alt}`}
+            aria-current={t === i}
+            className="group flex h-7 items-center px-1 cursor-pointer"
             key={t}
-          />
+          >
+            <span
+              className={`block h-1.5 transition-all duration-500 ${t === i ? "w-5 bg-[#d4af37]" : "w-1.5 bg-white/45 group-hover:bg-white/80"}`}
+            />
+          </button>
         ))}
       </div>
     </div>

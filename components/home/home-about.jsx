@@ -3,6 +3,28 @@
 import { Reveal } from "@/components/reveal";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
+// Main photo + overlapping smaller photo. Frames use each photo's own shape
+// (3:2 and 4:3) so nothing is cropped.
+function AboutPhotos({ className = "" }) {
+  return (
+    <div className={`relative mx-auto w-full max-w-xl lg:max-w-none pb-[30%] ${className}`}>
+      <div className="relative ml-auto w-[92%] sm:w-full aspect-[3/2] overflow-hidden rounded-sm border border-[rgba(212,175,55,0.25)] bg-[#121015] shadow-2xl">
+        <img
+          src="/images/home/exterior-sunset.jpg"
+          alt="Casa Brio villa lit up at sunset with the hills behind"
+          className="h-full w-full object-cover object-center transition-transform duration-700 hover:scale-105"
+        />
+      </div>
+      <div className="absolute bottom-0 left-0 sm:-left-10 w-[48%] sm:w-[45%] aspect-[4/3] overflow-hidden rounded-sm border-2 border-[#d4af37]/40 bg-[#121015] shadow-[0_25px_60px_rgba(0,0,0,0.9)]">
+        <img
+          src="/images/home/gallery/terrace/terrace-01.jpg"
+          alt="Friends on the Casa Brio terrace at sunset"
+          className="h-full w-full object-cover object-center transition-transform duration-700 hover:scale-105"
+        />
+      </div>
+    </div>
+  );
+}
 function HomeAbout() {
   return (
     <section className="relative overflow-hidden bg-[#08080a] py-16 sm:py-20 text-[#f4efe6]">
@@ -28,6 +50,7 @@ function HomeAbout() {
                     and every other space is only for your group. No strangers, no sharing.
                   </p>
                 </div>
+                <AboutPhotos className="mb-10 lg:hidden" />
                 <div className="grid grid-cols-2 gap-6 border-y border-[rgba(212,175,55,0.2)] py-6">
                   <div>
                     <div className="font-serif text-2xl sm:text-3xl text-[#d4af37]">
@@ -69,25 +92,9 @@ function HomeAbout() {
               </div>
             </Reveal>
           </div>
-          <div className="lg:col-span-6 relative flex flex-col justify-center">
+          <div className="hidden lg:col-span-6 relative lg:flex flex-col justify-center">
             <Reveal delay={120}>
-              {/* Frames use each photo's own shape (3:2 and 4:3) so nothing is cropped. */}
-              <div className="relative mx-auto w-full max-w-xl lg:max-w-none sm:pb-[30%]">
-                <div className="relative aspect-[3/2] overflow-hidden rounded-sm border border-[rgba(212,175,55,0.25)] bg-[#121015] shadow-2xl">
-                  <img
-                    src="/images/home/exterior-sunset.jpg"
-                    alt="Casa Brio villa lit up at sunset with the hills behind"
-                    className="h-full w-full object-cover object-center transition-transform duration-700 hover:scale-105"
-                  />
-                </div>
-                <div className="absolute bottom-0 -left-6 sm:-left-10 w-[45%] aspect-[4/3] overflow-hidden rounded-sm border-2 border-[#d4af37]/40 bg-[#121015] shadow-[0_25px_60px_rgba(0,0,0,0.9)] hidden sm:block">
-                  <img
-                    src="/images/home/gallery/terrace/terrace-01.jpg"
-                    alt="Friends on the Casa Brio terrace at sunset"
-                    className="h-full w-full object-cover object-center transition-transform duration-700 hover:scale-105"
-                  />
-                </div>
-              </div>
+              <AboutPhotos />
             </Reveal>
           </div>
         </div>
