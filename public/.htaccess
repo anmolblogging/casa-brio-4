@@ -1,0 +1,3 @@
+# Used by Apache hosting (Hostinger). Ignored on Vercel.
+ErrorDocument 404 /404.html
+Options -Indexes
